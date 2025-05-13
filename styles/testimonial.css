@@ -16,3 +16,10 @@ article {
     margin: 0 auto;
     text-align: justify; 
 }
+
+h3 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;    
+}
