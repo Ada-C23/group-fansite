@@ -1,0 +1,29 @@
+
+/* colors
+    blue #5D76C9
+    orange #F06115
+    pink #DF8ED1
+    green #94911C
+    tan #EAD3C1
+    white #FFFBF7
+    black #1A1B1C
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    list-style: none;
+}
+
+footer {
+
+}
