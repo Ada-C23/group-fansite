@@ -1,0 +1,31 @@
+section p {
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+section a::before {
+  content: "🔗 ";
+  font-style: normal;
+}
+
+section a {
+  color: #5e7a89;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+
+section {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
