@@ -1,6 +1,4 @@
 article {
-    margin: 20px auto;
-    width: 60%;
     font-size: 20px;
     text-align:center;
     color: rgb(115, 112, 118);
@@ -28,4 +26,14 @@ article a:hover {
 
 h4 {
     margin: 0;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }

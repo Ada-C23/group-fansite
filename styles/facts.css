@@ -13,4 +13,7 @@ ul {
   line-height: 1.8;
 }
 
+main ul p {
+  margin-bottom: 0;
+}
 
