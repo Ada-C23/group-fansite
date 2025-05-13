@@ -1,45 +1,45 @@
 h1 {
-    color: #f5c16c;
+  color: #f5c16c;
 }
 h2 {
-    color: #d94a38;
+  color: #d94a38;
 }
 
 .background-orange {
-    background-color: #d94a38;
-    padding-top: 10px;
+  background-color: #d94a38;
+  padding-top: 10px;
 }
 
 .white-par {
-    color: white;
-    padding-bottom:30px;
+  color: white;
+  padding-bottom: 30px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 nav a:hover {
-    color: #d94a38; /* tomato red on hover */
-    text-decoration: underline;
+  color: #d94a38; /* tomato red on hover */
+  text-decoration: underline;
 }
 main {
-    padding: 60px;
+  padding: 60px;
 }
 .main-footer {
-    color: white;
-    background-color: #d94a38;
-    padding: 30px;
+  color: white;
+  background-color: #d94a38;
+  padding: 30px;
 }
