@@ -25,3 +25,7 @@ article a:hover {
     color: rgb(132, 169, 177);
     cursor: pointer;
 }
+
+h4 {
+    margin: 0;
+}
