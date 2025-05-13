@@ -1,0 +1,23 @@
+img {
+    width: 75%;
+    border-radius: 15px;
+}
+
+section p {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.pasta {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: gainsboro;
+    width: 50%;
+    margin-bottom: 2%;
+    justify-self: center;
+    box-shadow: 8px 5px 5px gainsboro;
+}
+
+.source {
+    font-size: 10px;
+}
