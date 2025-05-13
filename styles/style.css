@@ -60,8 +60,34 @@ img{
     width: 600px;
 }
 
+/* -------- Vicky - actors.html styling -------- */
+
+.actors-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1000; /* ensures nav stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* adds a subtle shadow */
+    padding: 10px 0;
+}
+
+.actors-header {
+  margin-top: 60px;
+}
+
+.actors-title {
+    color: #5416db;
+}
+
+.actors-body {
+    padding-top: 10px;
+}
+
+
 #cities-list{
     list-style-type: "🍕";
-    padding-left: 340px;
-    padding-right: 340px;
+    padding-left: 440px;
+    padding-right: 440px;
 }
