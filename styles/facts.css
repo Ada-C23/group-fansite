@@ -1,0 +1,58 @@
+
+
+h2 {
+    background-color: rgb(236, 234, 234);
+  }
+
+img {
+    max-width: 50%;
+    max-height:50%;
+    float: left;
+}
+
+ol {
+    text-align: left;
+
+}
+
+
+ol li {
+    margin: auto;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(251, 229, 229);
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 227, 227);
+  }
+
+#img-end {
+        max-width: 1000px;
+        max-height:300px;
+        float: none;
+}
+
+.title-list {
+    display: inline;
+    margin: 50px;
+}
+
+.text {
+    font-size: 15px;
+    padding-left: 80px;
+    padding-top: 0%;
+    float: left;
+    text-align: left;
+    margin: 50px;
+    color: gray;
+  }
+
+
+
