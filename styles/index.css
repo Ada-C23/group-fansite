@@ -7,7 +7,6 @@ body {
 .hero {
     padding: 4rem 1rem;
     text-align: center;
-    color: #5D76C9;
 }
 
 .hero h2 {
@@ -18,7 +17,9 @@ body {
 }
 
 .group {
-    background: #EAD3C1;
+    background: url('../assets/img/bg/index-bg-checkered.png');
+    background-size: 150px; 
+    background-repeat: repeat;
     text-align: center;
     padding: 2rem 0;
 }
@@ -27,7 +28,7 @@ article {
     vertical-align: top;
     width: 500px;
     margin: 1rem;
-    background: #94911C;
+    background: #5D76C9;
     border-radius: 1rem;
     text-align: left;
     overflow: hidden;
