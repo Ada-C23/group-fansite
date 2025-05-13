@@ -58,3 +58,9 @@ ul {
 img{
     width: 600px;
 }
+
+#cities-list{
+    list-style-type: "🍕";
+    padding-left: 340px;
+    padding-right: 340px;
+}
