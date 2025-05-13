@@ -3,12 +3,8 @@ body {
     background-color: rgb(248, 248, 239);
 }
 h1 {
-<<<<<<< HEAD
     color: #f5c16c;
     font-size: 40px;
-=======
-  color: #f5c16c;
->>>>>>> 643c1935c78fd52fd6bf075863279967ea963dcd
 }
 h2 {
   color: #d94a38;
@@ -38,7 +34,6 @@ main {
   background-color: #d94a38;
   padding-top: 10px;
 }
-<<<<<<< HEAD
 .white-param {
     color: white;
     padding-bottom:30px;
@@ -48,39 +43,4 @@ main {
     color: white;
     background-color: #d94a38;
     padding: 30px;
-=======
-
-.white-par {
-  color: white;
-  padding-bottom: 30px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover {
-  color: #d94a38; /* tomato red on hover */
-  text-decoration: underline;
-}
-main {
-  padding: 60px;
-}
-.main-footer {
-  color: white;
-  background-color: #d94a38;
-  padding: 30px;
->>>>>>> 643c1935c78fd52fd6bf075863279967ea963dcd
 }
