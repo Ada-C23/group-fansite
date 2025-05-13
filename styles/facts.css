@@ -1,0 +1,35 @@
+body{
+    margin: 15px;
+    background: #ebebeb;
+}
+
+h1 {
+    color: #224461;
+}
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+ol {
+    color: #224461;
+    list-style: decimal-leading-zero;
+}
+
+.fact-li {
+    margin: 10px;
+    padding: 5px;
+}
+.fact-li h2{
+    color: #f9d143;
+    font-weight: 300;
+}
+
+.fact-li p{
+    color: #224461;
+    font-weight: 100;
+}
+
+#example-code{
+    color: #224461;
+}
