@@ -1,0 +1,27 @@
+article {
+    margin: 20px auto;
+    width: 60%;
+    font-size: 22px;
+    text-align:center;
+    color: rgb(115, 112, 118);
+    line-height: 1.8;
+}
+
+img {
+    border-radius: 10px;
+}
+
+footer, h1 {
+    background-color: #eef4ee;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+article a :hover {
+    color: rgb(100, 131, 138);
+    cursor: pointer;
+}
