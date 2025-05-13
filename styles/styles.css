@@ -25,5 +25,10 @@ nav ul{
 }
 
 footer {
-
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    list-style: none;
 }

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 body {
     color: #1A1B1C;
@@ -7,15 +9,30 @@ body {
 .hero {
     padding: 4rem 1rem;
     text-align: center;
+    font-family: "Danfo";
+    min-height: 320px;
+    max-height: 500px;
 }
 
 .hero h2 {
     font-size: 3rem;
     margin: 0;
+    font-family: "Danfo";
+    font-size: 120px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
+.marquee {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFBF7;
+    background-color: #DF8ED1;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: "Bricolage Grotesque";
+}
 .group {
     background: url('../assets/img/bg/index-bg-checkered.png');
     background-size: 150px; 
@@ -32,6 +49,7 @@ article {
     border-radius: 1rem;
     text-align: left;
     overflow: hidden;
+    border: 8px solid #5D76C9;
 }
 
 article img {
