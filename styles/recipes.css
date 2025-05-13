@@ -6,12 +6,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #fffaf4;
   color: #333;
   padding: 20px;
   line-height: 1.6;
-  cursor: url("../assets/pasta-icon.png"), auto;
+  text-align: left;
 }
 
 header {
