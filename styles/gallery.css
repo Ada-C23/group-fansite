@@ -1,0 +1,51 @@
+/* Blue 
+
+HEX:
+#224461
+Yellow #f9d143
+Light gray HEX:
+#ebebeb */
+body {
+    color: #224461;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+main ul li {
+    padding: 10px;
+    background-color: #f9d143;
+    text-align: center;
+    width: 350px; /* fixed width */
+}
+
+main ul img {
+    height: 300px; 
+    width: 100%;
+    object-fit: contain;
+}
+
+main ul img:hover {
+    transform: scale(1.05);
+}
