@@ -1,7 +1,5 @@
 article {
-    margin: 20px auto;
-    width: 60%;
-    font-size: 22px;
+    font-size: 20px;
     text-align:center;
     color: rgb(115, 112, 118);
     line-height: 1.8;
@@ -21,7 +19,21 @@ article a {
     padding: 5px;
 }
 
-article a :hover {
-    color: rgb(100, 131, 138);
+article a:hover {
+    color: rgb(132, 169, 177);
     cursor: pointer;
+}
+
+h4 {
+    margin: 0;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }
