@@ -1,0 +1,18 @@
+.main-title {
+    font-family:"Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Dokdo", system-ui;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; 
+}
