@@ -1,5 +1,7 @@
 body {
     background-color: goldenrod;
+    padding: 20px;
+    cursor: url("../assets/pasta-icon.png"), auto;
 }
 
 header img {
@@ -7,12 +9,22 @@ header img {
     margin: 0;
 }
 
+h1 {
+    color: lightgoldenrodyellow;
+}
 h3 {
     background-color: lightgoldenrodyellow;
     padding: 10px;
+    border-radius: 10px;
 }
 
 main {
     background-color: goldenrod;
     border: 0px solid black;
 }
+
+nav a:hover {
+    color: green;
+}
+
+
