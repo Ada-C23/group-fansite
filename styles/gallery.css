@@ -1,10 +1,3 @@
-/* Blue 
-
-HEX:
-#224461
-Yellow #f9d143
-Light gray HEX:
-#ebebeb */
 body {
     color: #224461;
     background-color: #ebebeb;
@@ -12,13 +5,19 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 50px;
     font-weight: bold;
+}
+
+nav {
+    padding: 10px;
+    margin: 10px;
 }
 
 nav li {
     list-style: none;
     display: inline;
+    padding: 10px;
 }
 
 main {
@@ -48,4 +47,5 @@ main ul img {
 
 main ul img:hover {
     transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
