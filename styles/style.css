@@ -1,3 +1,11 @@
+body {
+    padding: 150px;
+}
+
+#welcome_message {
+    padding: 0px 300px 0px 300px;
+}
+
 h1{
     color:aquamarine;
     font-family: fantasy;
