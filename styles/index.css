@@ -21,7 +21,7 @@ article a {
     padding: 5px;
 }
 
-article a :hover {
-    color: rgb(100, 131, 138);
+article a:hover {
+    color: rgb(132, 169, 177);
     cursor: pointer;
 }
