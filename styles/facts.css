@@ -1,24 +1,48 @@
 body{
     margin: 15px;
     background: #ebebeb;
+    font-family: 'Fira Code', 'Source Code Pro', 'Inconsolata', 'Ubuntu Mono', monospace;
+    line-height: normal;
+}
+
+.header_container{
+    display: flex;
+}
+
+.nav_container{
+    display: flex;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    flex-wrap: wrap;
 }
 
 h1 {
     color: #224461;
+    /* text-align: center; */
+    /* display: inline; */
 }
+
 nav li {
     list-style: none;
-    display: inline;
+    border: 2px red solid;
+    /* display: inline; */
 }
 
 ol {
     color: #224461;
     list-style: decimal-leading-zero;
+    margin: 20px;
 }
 
 .fact-li {
-    margin: 10px;
+    /* margin: 10px; */
     padding: 5px;
+    width: 150px;
+    height: 150px;
+    border: 1px green solid;
 }
 .fact-li h2{
     color: #f9d143;
@@ -32,4 +56,8 @@ ol {
 
 #example-code{
     color: #224461;
+}
+
+code {
+    line-height: 50%;
 }
