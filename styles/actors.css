@@ -8,17 +8,27 @@
 }
 
 #top-actors-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    width: 800px;
-    height: 400px;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: space-around;
+  align-items: flex-start; 
+}
+
 
 #top-actors-list li {
-  text-align: left;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+#top-actors-list li img {
+  width: 100px; 
+  height: auto;
+  object-fit: cover; 
+  margin-bottom: 10px; 
 }
 
 #top-actors-list li a {
