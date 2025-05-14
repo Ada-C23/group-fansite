@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Danfo&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -30,28 +32,22 @@ article {
 }
 
 article h2 {
-  font-family: "Cherry Bomb One", cursive;
+  font-family: 'Luckiest Guy', cursive;
   font-size: 2rem;
   color: #F06115;
   margin-top: 0;
 }
 
+article p {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.4rem;
+  color: black;
+  line-height: 1.6;
+}
+
 footer {
-  text-align: center;
-  padding: 2rem;
   background-color: white;
-  font-size: 0.9rem;
 }
-
-/* nav {
-  background-color: #DF8ED1;
-}
-
-nav a {
-  font-family: 'Cherry Bomb One', cursive; 
-  color: #5D76C9;                         
-  font-size: 1.2rem;
-} */
 
 header {
   background-color: white;
