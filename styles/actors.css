@@ -4,13 +4,13 @@
     left: 0;
     width: 100%;
     background-color: #fff; 
-    z-index: 1000; /* ensures nav stays on top of other content */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* adds a subtle shadow */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     padding: 10px 0;
 }
 
 .actors-header {
-  margin-top: 60px;
+  margin-top: 85px;
 }
 
 .actors-title {
@@ -20,4 +20,16 @@
 .actors-body {
     padding-top: 10px;
 }
+
+#top-actors-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left; 
+  }
+
+#top-actors-list li::marker {
+  content: "⭐️";
+}
+
 
