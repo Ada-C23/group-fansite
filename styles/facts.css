@@ -1,6 +1,6 @@
-#cities-list::before {
-  content: "🍕";
-  font-style: normal;
+#cities-list li::before {
+  content: "🍕 ";
+  margin-right: 0.5em;
 }
 
 /* {
