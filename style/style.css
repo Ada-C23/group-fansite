@@ -1,30 +1,178 @@
+/* Google Fonts import - add to HTML head */
+/* <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     text-align: center;
-    background-color: rgba(255, 192, 203, 0.456);
-    font-family:'Comic Neue', 'Poppins', 'Segoe UI', sans-serif;
-    }
+    background-color: rgba(255, 192, 203, 0.2);
+    font-family: 'Comic Neue', 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-.navigation {
-    background-color: hwb(0 100% 0%);             
-    padding: 30px 50px;
-    border-radius: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* Global paragraph style */
+p {
+    font-size: 20px; /* Increased from browser default */
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    background-color: #fff0f5;
+    padding: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #8b0000;
+    margin: 0 0 10px 0;
+}
+
+header p {
     font-family: 'Quicksand', sans-serif;
-    max-width: 1100px;
-    margin: 40px auto;
+    font-size: 1.2rem;
+    color: #8b4513;
 }
 
-/* Add these new rules */
-.navigation ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Make list items display in a row */
-    justify-content: center; /* Center the list items horizontally */
-    /* word-spacing: 5px; */
+/* Navigation styles - Moved inside header */
+nav.navigation {
+    background-color: transparent; /* Remove background so it blends with header */
+    padding: 10px 20px 20px;
+    margin: 10px auto 0;
+    max-width: 800px;
 }
 
-.navigation li {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
     margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff6b81;
+    border-bottom: 2px solid #ff6b81;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Headings */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8b0000;
+    margin: 30px 0 15px;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8b4513;
+    margin: 25px 0 10px;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: #8b4513;
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Sections and divs */
+section {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+div {
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    color: #8b0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6b81;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #fff0f5;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+/* Special containers */
+.location, .hours {
+    background-color: #fffaf0;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
 }

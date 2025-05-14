@@ -5,46 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Evyy Cafe!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
+  <link href="style/index.css" rel="stylesheet">
 </head>
 <body>
     <header id="evyy">
-        <h1><strong>Welcome to Evyy Cafe!</strong></h1>
+        <!-- Logo instead of heading -->
+        <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo" width="250">
+        
         <p>A cozy retro café where stories are brewed, and time slows down.</p>
+        
+        <nav class="navigation"> 
+            <ul> 
+                <li><a href="pages/about_us.html" id="about">About Us</a></li>
+                <li><a href="pages/our_desserts.html" id="facts">Our Desserts</a></li> 
+                <li><a href="pages/diy.html" id="recipes">DIY</a></li>
+                <li><a href="pages/gallery.html" id="gallery">Gallery</a></li> 
+            </ul> 
+        </nav>
     </header>
-    <nav class="navigation"> 
-        <ul> 
-            <li><a href="pages/facts.html" id="facts">Our Blend</a></li> 
-            <li><a href="pages/gallery.html" id="gallery">Photo Roast</a></li> 
-            <li><a href="pages/recipes.html" id="recipes">Recipes</a></li> 
-        </ul> 
-    <nav>
-        <a href="pages/about_cafe.html" id="about">About</a>
-        <a href="pages/facts.html" id="facts">Our Blend</a>
-        <a href="pages/gallery.html" id="gallery">Photo roast</a>
-        <a href="pages/recipes.html" id="recipes">Recipes</a>
-    </nav>
+    
     <main>
-        <div>
-          <img id="cafe" alt="Cafe outdoor" width="300"
-          src="images/Evyy.png">
-          <p>
-            <caption>A virtual shot from our store!</caption>
-          </p>       
+        <div class="photo-container">
+            <div class="photo-box">
+                <img class="cafe-image" alt="Cafe outdoor" src="images/Evyy.png">
+            </div>
+            <div class="photo-box">
+                <img class="cafe-image" alt="Our baking crew at work" src="images/bakingcrew.webp">
+            </div>
+        </div>
+        <p class="photo-caption">A glimpse into the Evyy Cafe experience!</p>
     </main>
-    <div>  <!-- location -->
-      <h3>Location</h3>
-      <p>Ada Developers Academy
-          PO Box 944
-          Issaquah, WA 98027
-      </p>
+    
+    <div class="info-container">
+        <div class="location">
+            <h3>Location</h3>
+            <p>Ada Developers Academy<br>
+                PO Box 944<br>
+                Issaquah, WA 98027
+            </p>
+        </div>
+        <div class="hours">
+            <h3>Our Hours</h3>
+            <p>Open every day<br>
+              8am to 2pm
+            </p>
+        </div>
     </div>
-    <div>  <!-- hours-->
-      <h4>Our Hours</h4>
-      <p>Open every day
-        8am to 2pm
-      </p>
-    </div>
+    
     <footer id="copyright">
         <p>&copy; 2025 Dessert Fans</p>
     </footer>

@@ -1,54 +1,4 @@
-/* General styles */
-body {
-    text-align: center;
-    background-color: rgba(255, 192, 203, 0.2);
-    font-family: 'Comic Neue';
-}
-
-/* Header */
-header {
-    background-color: #fff0f5;
-    padding: 40px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #8b0000;
-    margin: 0;
-}
-
-/* Navigation */
-nav {
-    background-color: #fffafa;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #8b0000;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-    transition: color 0.3s ease;
-}
-
-/* Main Gallery */
+/* Main Gallery specific styles */
 main div img {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -69,11 +19,24 @@ main p {
     color: #8b0000;
 }
 
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: #fff0f5;
-    color: #444;
-    font-size: 0.9rem;
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+main > div > div {
+    max-width: 320px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
