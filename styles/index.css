@@ -1,3 +1,19 @@
 h1 {color: #224461; font-style: bold; font-family: 'Fira Code', monospace;} 
 h2 {color: #f9d143; font-style: italic; font-family: 'Inconsolata', monospace;}
 p {color: #ebebeb; background-color: #224461; font-family: 'Source Code Pro', monospace;}
+
+body {display: grid;
+grid-template-rows: auto 1fr;
+gap: 1rem;
+padding: 2rem;
+font-family: 'Fira Code', monospace;
+background-color: whitesmoke;
+}
+
+header h1 {color: #224461; text-align: center;}
+
+.team {text-align: center; color: #f9d143; font-style: italic; font-family: 'Inconsolata', monospace;}
+
+nav {display: flex; justify-content: center; gap: 2rem}
+
+.joke {background-color: #224461; color: #ebebeb; font-family: 'Source Code Pro', monospace;}
