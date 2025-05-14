@@ -60,3 +60,10 @@
   content: "⭐️";
 }
 
+.actors-footer {
+  margin-bottom: auto;
+}
+
+.full-cast-section {
+  flex-grow: 1;
+}
