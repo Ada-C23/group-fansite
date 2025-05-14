@@ -1,5 +1,5 @@
 .gallery-background {
-    background-image: url("../assets/Kirks-dik-dik.jpg");
+    background-image: url("../assets//PCl5AZ2gRCqoOTy79dMbCg.webp");
     background-size: cover;
     background-position: center;
     padding: 2rem;
@@ -115,6 +115,52 @@
 .image-grid a:hover {
     color: #ffdd57;
     transform: scale(1.05);
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.video-frame {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: none;
+}
+
+
+.centerpiece {
+    grid-area: 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/* Apply square shape to all images */
+.image-grid img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 /*
