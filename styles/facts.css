@@ -1,11 +1,15 @@
 body{
     margin: 15px;
     background: #ebebeb;
+    font-family: 'Fira Code', 'Source Code Pro', 'Inconsolata', 'Ubuntu Mono', monospace;
+    line-height: normal;
 }
 
 h1 {
     color: #224461;
+    text-align: center;
 }
+
 nav li {
     list-style: none;
     display: inline;
@@ -14,6 +18,7 @@ nav li {
 ol {
     color: #224461;
     list-style: decimal-leading-zero;
+    margin: 20px;
 }
 
 .fact-li {
@@ -32,4 +37,8 @@ ol {
 
 #example-code{
     color: #224461;
+}
+
+code {
+    line-height: 50%;
 }
