@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-.actors-nav {
+/* .actors-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,11 +40,11 @@
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     padding: 10px 0;
-}
+} */
 
-.actors-header {
+/* .actors-header {
   margin-top:90px;
-}
+} */
 
 .actors-title {
     color: black;

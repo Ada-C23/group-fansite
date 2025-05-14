@@ -42,6 +42,11 @@ nav {
   padding: 10px 0;
 }
 
+
+ul {
+  line-height: 1.8;
+} 
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
