@@ -20,40 +20,33 @@ nav li {
     padding: 10px;
 }
 
-main {
+/* main {
     padding: 20px 0;
-}
+} */
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 
-main ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: contents;
-}
-
-main ul li {
+.card {
     padding: 20px;
     background-color: #f9d143;
     text-align: center;
-    width: 350px; /* fixed width */
-    /* box-sizing: border-box; */
+    width: 350px;
 }
 
-main ul img {
-    height: 300px; 
+.card img {
+    height: 300px;
     width: 100%;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
 
-main ul img:hover {
+.card img:hover {
     transform: scale(1.05);
 }
 
