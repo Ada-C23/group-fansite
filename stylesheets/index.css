@@ -13,6 +13,7 @@ h2 {
 nav a {
     color: #d94a38;
     font-size: large;
+    text-decoration: none;
 }
 nav a:hover {
     color: black;
@@ -29,6 +30,7 @@ main {
     background-color: #f5c16c;
     padding: 40px;
     font-size: 20px;
+    border-radius: 10px;
 }
 .background-orange {
     background-color: #d94a38;
@@ -43,4 +45,15 @@ main {
     color: white;
     background-color: #d94a38;
     padding: 30px;
+}
+
+/* ====grid=== */
+.container{
+
+    border: solid #f5c16c 1px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
