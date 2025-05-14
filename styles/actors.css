@@ -43,11 +43,12 @@
 }
 
 .actors-header {
-  margin-top: 85px;
+  margin-top:90px;
 }
 
 .actors-title {
-    color: #5416db;
+    color: black;
+    background-color:#d1efff;
 }
 
 .actors-body {
