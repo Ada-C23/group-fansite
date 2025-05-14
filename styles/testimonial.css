@@ -1,25 +1,100 @@
-.main-title {
-    font-family:"Rampart One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+h1 {
+    font-family: "Danfo";
+    font-size: 80px;
     text-align: center;
 }
 
-h2 {
-    font-family: "Dokdo", system-ui;
-    font-weight: 400;
-    font-style: normal;   
+/* marquee animation*/
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    color: #FFFBF7;
+    background-color: #DF8ED1;
+    padding: 10px 0;
 }
 
-article {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify; 
+.marquee-text {
+    font-family: "Cherry Bomb One";
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 40px;
+    padding: 16px 32px;
+    color: #FFFBF7;
+    
+    
 }
 
-h3 {
-    font-family: "Cherry Bomb One", system-ui;
-    font-weight: 400;
+@keyframes marquee {
+    0%   { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+}
+
+
+/* Contenedor principal */
+.testimonial-card {
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
+}
+
+/* Título del grupo */
+.testimonial-group {
+    font-family: "Cherry Bomb One", cursive;
+    color: #DF8ED1;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Contenedor autor + foto */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Foto redonda */
+.author-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #DF8ED1;
+}
+
+/* Nombre del autor */
+.author-name {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Relación */
+.author-relation {
+    margin: 5px 0 0;
+    color: #777;
+    font-style: italic;
+}
+
+/* Texto del testimonio */
+blockquote {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    padding: 0;
     font-style: normal;
-    text-align: center;    
+}
+
+/* Saltos de línea entre párrafos */
+blockquote br {
+    display: block;
+    content: "";
+    margin-bottom: 15px;
 }
