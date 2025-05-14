@@ -2,12 +2,15 @@
 
 h2 {
     background-color: rgb(236, 234, 234);
+    font-size: 18px;
   }
 
-h4{
-    background-color: rgb(230, 199, 60);
+h3 {
     font-size: 16px;
-    color: white;
+}
+h4{
+    background-color: rgb(236, 234, 234);
+    font-size: 16px;
     margin: auto;
 }
 
@@ -20,7 +23,7 @@ ol {
 ol li {
     margin: auto;
     margin-bottom: 8px;
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
     border-radius: 5px;
     background-color: rgb(251, 229, 229);
@@ -29,10 +32,16 @@ ol li {
 
 li:hover {
     color: rgb(236, 96, 96);
+    font-weight:bold;
+}
+
+.zoom:hover {
+    transform: scale(1.08);
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: rgb(231, 227, 227);
@@ -40,13 +49,13 @@ li:hover {
 
 .container-end {
 
-    width: 900px;
-    height: 600px;
+    width: 85%;
+    height: 53%;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 15px;
     object-fit: contain;
     background-color: white;
 
@@ -74,7 +83,6 @@ li:hover {
 
 .text {
     font-size: 15px;
-    padding-left: 80px;
     padding-top: 0%;
     float: left;
     text-align: left;
