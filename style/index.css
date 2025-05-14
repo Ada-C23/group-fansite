@@ -1,19 +1,15 @@
-/* index.css - specific styles for the home page */
-
-/* Header with navigation inside */
 header#evyy {
     background-color: #ffecf3;
     border-bottom: 3px solid #ffc0cb;
-    padding: 20px 0 30px; /* Reduced top padding */
+    padding: 20px 0 30px;
 }
 
-/* Logo styling */
 #logo {
     display: block;
-    margin: 0 auto 10px; /* Reduced space between logo and tagline */
+    margin: 0 auto 10px;
     box-shadow: none;
     transition: transform 0.3s ease;
-    width: 250px;
+    width: 350px;
     height: auto;
 }
 
@@ -21,7 +17,6 @@ header#evyy {
     transform: scale(1.05);
 }
 
-/* Tagline styling */
 header#evyy p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
@@ -29,10 +24,9 @@ header#evyy p {
     margin-bottom: 15px;
 }
 
-/* Navigation specific to the header */
 header#evyy nav.navigation {
     margin-top: 10px;
-    border-top: none; /* Removed the dashed border */
+    border-top: none;
     padding-top: 10px;
 }
 
@@ -42,7 +36,7 @@ header#evyy nav.navigation a {
     border-radius: 30px;
     padding: 8px 20px;
     transition: all 0.3s;
-    font-size: 18px; /* Added larger font size for navigation links */
+    font-size: 18px;
 }
 
 header#evyy nav.navigation a:hover {
@@ -52,14 +46,12 @@ header#evyy nav.navigation a:hover {
     border-color: #ffc0cb;
 }
 
-/* Fix for subpages navigation links to home */
 header#evyy nav.navigation a[href="../index.html"] {
-    /* Same styles as other navigation links */
     background-color: transparent;
     border: 2px solid #ffc0cb;
     border-radius: 30px;
     padding: 8px 20px;
-    font-size: 18px; /* Added larger font size for home link */
+    font-size: 18px;
 }
 
 header#evyy nav.navigation a[href="../index.html"]:hover {
@@ -68,12 +60,10 @@ header#evyy nav.navigation a[href="../index.html"]:hover {
     transform: translateY(-3px);
 }
 
-/* Make sure all pages have the correct relative paths to images */
 body > header#evyy {
     background-color: #ffecf3;
 }
 
-/* Side-by-side photos styling */
 .photo-container {
     display: flex;
     justify-content: center;
@@ -83,7 +73,7 @@ body > header#evyy {
 }
 
 .photo-box {
-    width: 450px; /* 50% larger than original 300px */
+    width: 450px;
 }
 
 .cafe-image {
@@ -99,59 +89,66 @@ body > header#evyy {
     transform: scale(1.05);
 }
 
-/* Caption styling */
 .photo-caption {
     font-style: italic;
     color: #777;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 16px; /* Ensure caption is also larger */
+    font-size: 16px;
 }
 
-/* Container for location and hours */
 .info-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    gap: 30px; /* Space between boxes */
+    justify-content: center;
+    gap: 30px;
     margin: 40px auto;
     max-width: 1000px;
 }
 
-/* Style the location and hours sections - placed side by side with centered content */
 .location, .hours {
     border-bottom: 4px solid #ffc0cb;
-    padding: 25px 15px; /* Added vertical padding for better spacing */
+    padding: 25px 15px;
     text-align: center;
-    max-width: 45%; /* Reduced from 600px to percentage for side-by-side */
-    box-sizing: border-box; /* Include padding in width calculation */
-    background-color: #fff9fb; /* Light background for better definition */
+    max-width: 45%;
+    box-sizing: border-box;
+    background-color: #fff9fb;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    height: 180px; /* Fixed height for both boxes */
-    display: flex; /* Enable flexbox for vertical centering */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    width: 45%; /* Set width explicitly */
-    position: relative; /* For positioning elements inside */
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    position: relative;
 }
 
-/* Make headings consistent and remove default margins */
 .location h3, .hours h3, .location h4, .hours h4 {
     color: #8b0000;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    margin: 0 0 10px 0; /* Reset top margin to 0 */
+    margin: 0 0 10px 0;
     text-align: center;
 }
 
-/* Adjust paragraph margins to help with vertical centering and increase font size */
+.location h3 i, .hours h3 i {
+    margin-right: 8px;
+    color: #ff6b81;
+}
+
+.location h3 i {
+    font-size: 1.3rem;
+}
+
+.hours h3 i {
+    font-size: 1.2rem;
+}
+
 .location p, .hours p {
-    margin: 0; /* Remove default margins completely */
-    font-size: 18px; /* Increased font size for these specific paragraphs */
+    margin: 0;
+    font-size: 18px;
     line-height: 1.5;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .photo-container {
         flex-direction: column;
