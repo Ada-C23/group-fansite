@@ -1,13 +1,76 @@
+
+/* GENERAL GRID CONTAINER */
 body {
-    padding: 0px 150px 0px 150px;
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: auto 1fr 80px;
+    gap: 15px;
 }
 
-#welcome_message {
-    padding: 0px 300px 0px 300px;
+
+/* NAVIGATION */
+nav {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    height: 50vh;
+    border-radius: 5%;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.navlink {
+    padding: 20px;
+    height: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    font-size: 22px;
+}
+
+/* MAIN TITLES, WELCOME MESSAGE AND PICTURE PART */
+main {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 300px;
+}
+
+
+/* REVIEWS CONTENT PART */
+.reviews {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .review {
-    background-color: rgb(248, 240, 214)
+    background-color: rgb(248, 240, 214);
+    border: 2px solid black;
 }
 
 article {
@@ -19,4 +82,13 @@ article {
 
 .review_title {
     font-style: initial;
+}
+
+
+/* FOOTER PART */
+footer {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    padding: 20px;
+    color: black;
 }
