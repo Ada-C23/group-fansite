@@ -152,26 +152,6 @@ body > header#evyy {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     margin: 0 0 10px 0;
-    text-align: center;
-}
-
-.location h3 i, .hours h3 i {
-    margin-right: 8px;
-    color: #ff6b81;
-}
-
-.location h3 i {
-    font-size: 1.3rem;
-}
-
-.hours h3 i {
-    font-size: 1.2rem;
-}
-
-.location p, .hours p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 /* Newsletter subscription section */
