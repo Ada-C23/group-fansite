@@ -24,14 +24,14 @@ body {
 }
 
 .marquee {
+    font-family: "Bricolage Grotesque";
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
     color: #FFFBF7;
     background-color: #DF8ED1;
     padding: 1rem 0;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Bricolage Grotesque";
 }
 .group {
     background: url('../assets/img/bg/index-bg-checkered.png');
@@ -59,14 +59,41 @@ article img {
 }
 
 .text-container {
-    padding: 16px 32px;
+    padding: 16px 24px;
     color: #FFFBF7;
+    font-family: "Bricolage Grotesque";
 }
 
 .text-container h3 {
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #DF8ED1;
+    text-shadow:
+        -1px -1px 0 #1A1B1C,
+        1px -1px 0 #1A1B1C,
+        -1px  1px 0 #1A1B1C,
+        1px  1px 0 #1A1B1C;
+    margin: 0;
 }
 
+.text-container h4 {
+    font-size: 32px;
+    font-weight: 800;
+    color:  #DF8ED1;
+    text-shadow:
+        -1px -1px 0 #1A1B1C,
+        1px -1px 0 #1A1B1C,
+        -1px  1px 0 #1A1B1C,
+        1px  1px 0 #1A1B1C;
+    margin: 0 0 16px 0;
+}
+
+.text-container p {
+    font-size: 24px;
+    font-weight: 600;
+    color:  #FFFBF7;
+    margin: 0;
+}
 /* colors
     blue #5D76C9
     orange #F06115
