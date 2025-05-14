@@ -1,18 +1,62 @@
-/* pending for font and background selection
-.main-title {
-    font-family:;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-h2 {
-    font-family:;
-    font-weight: 400;
-    font-style: normal;   
-}
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Danfo&family=Montserrat&display=swap');
 
 body {
-  background-color: #F06115;
+    font-family: 'Montserrat', sans-serif;
+    background: url('../assets/img/bg/index-bg-checkered.png');
+    background-size: 150px;
+    background-repeat: repeat;
 }
-*/
+
+.main-title {
+  font-family: "Danfo", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+main {
+  max-width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+}
+
+article {
+  background-color: #EAD3CA;  
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+article h2 {
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 2rem;
+  color: #F06115;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  font-size: 0.9rem;
+}
+
+nav {
+  background-color: #DF8ED1;
+}
+
+nav a {
+  font-family: 'Cherry Bomb One', cursive; 
+  color: #5D76C9;                         
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: white;
+}
+
+html, body {
+  background-color: white;
+}
