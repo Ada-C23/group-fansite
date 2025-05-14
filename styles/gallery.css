@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+/* colors
+    blue #5D76C9
+    orange #F06115
+    pink #DF8ED1
+    green #94911C
+    tan #EAD3C1
+    white #FFFBF7
+    black #1A1B1C
+*/
 
-
-.title {
+/* .title {
     font-family: "Rubik Puddles", system-ui";
     font-weight: 400;
     font-style: normal
@@ -12,15 +20,55 @@
     border-radius: ;
     box-shadow: ;
     margin: ;
+} */
+
+.gallery {
+    width: 90vw;
+    height: 600px;
+    display: block;
 }
 
+.gallery
+    .dennif, .jeslyn, .collette, .natasha{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width: 50%;
+}
 
-/* colors
-    blue #5D76C9
-    orange #F06115
-    pink #DF8ED1
-    green #94911C
-    tan #EAD3C1
-    white #FFFBF7
-    black #1A1B1C
-*/
+.dennif, .jeslyn, .collette, .natasha{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.xl {
+    grid-column: span 3;
+    grid-row: span 3;
+    max-width: 75%;
+    max-height: 75%;
+    
+}
+
+.m {
+    grid-column: span 2;
+    grid-row: span 1;
+    width: 100%;
+    width: 75%;
+    height: 25%;
+}
+
+.s {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 25%;
+    width: 25%;
+}
