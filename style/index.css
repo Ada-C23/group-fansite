@@ -40,7 +40,7 @@ header#evyy nav.navigation {
 }
 
 .main-nav li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 header#evyy nav.navigation a {
@@ -200,66 +200,4 @@ body > header#evyy {
 
 .subscribe-form input[type="email"] {
     flex: 1;
-    padding: 15px 20px; /* 25% larger padding */
-    border: 2px solid #ffc0cb;
-    border-radius: 30px 0 0 30px; /* 25% larger radius */
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px; /* 25% larger than standard text */
-    outline: none;
-}
-
-.subscribe-form button {
-    padding: 15px 30px; /* 25% larger padding */
-    background-color: #ffc0cb;
-    color: white;
-    border: 2px solid #ffc0cb;
-    border-radius: 0 30px 30px 0; /* 25% larger radius */
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px; /* 25% larger than standard text */
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.subscribe-form button:hover {
-    background-color: #ff6b81;
-    border-color: #ff6b81;
-}
-
-@media (max-width: 900px) {
-    .photo-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .photo-box {
-        width: 90%;
-        max-width: 450px;
-    }
-    
-    .info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .location, .hours {
-        max-width: 90%;
-        width: 90%;
-        margin: 15px auto;
-    }
-    
-    .subscribe-form {
-        flex-direction: column;
-        width: 90%;
-    }
-    
-    .subscribe-form input[type="email"] {
-        border-radius: 30px;
-        margin-bottom: 15px;
-    }
-    
-    .subscribe-form button {
-        border-radius: 30px;
-        width: 100%;
-    }
-}
+    padding: 15px
