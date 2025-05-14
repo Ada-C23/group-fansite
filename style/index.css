@@ -30,6 +30,19 @@ header#evyy nav.navigation {
     padding-top: 10px;
 }
 
+.main-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
 header#evyy nav.navigation a {
     background-color: transparent;
     border: 2px solid #ffc0cb;
@@ -37,6 +50,8 @@ header#evyy nav.navigation a {
     padding: 8px 20px;
     transition: all 0.3s;
     font-size: 18px;
+    text-decoration: none;
+    color: #8b0000;
 }
 
 header#evyy nav.navigation a:hover {
@@ -149,7 +164,59 @@ body > header#evyy {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+/* Newsletter subscription section */
+.subscribe-section {
+    background-color: #fff9fb;
+    padding: 40px 20px;
+    margin: 50px auto 0;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #ffc0cb;
+}
+
+.subscribe-section h3 {
+    color: #8b0000;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; /* 25% larger than standard heading */
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 750px; /* 25% larger than standard */
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 15px 20px; /* 25% larger padding */
+    border: 2px solid #ffc0cb;
+    border-radius: 30px 0 0 30px; /* 25% larger radius */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px; /* 25% larger than standard text */
+    outline: none;
+}
+
+.subscribe-form button {
+    padding: 15px 30px; /* 25% larger padding */
+    background-color: #ffc0cb;
+    color: white;
+    border: 2px solid #ffc0cb;
+    border-radius: 0 30px 30px 0; /* 25% larger radius */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px; /* 25% larger than standard text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #ff6b81;
+    border-color: #ff6b81;
+}
+
+@media (max-width: 900px) {
     .photo-container {
         flex-direction: column;
         align-items: center;
@@ -169,5 +236,20 @@ body > header#evyy {
         max-width: 90%;
         width: 90%;
         margin: 15px auto;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .subscribe-form input[type="email"] {
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .subscribe-form button {
+        border-radius: 30px;
+        width: 100%;
     }
 }
