@@ -1,19 +1,20 @@
 #cities-list {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: left; 
+    list-style-type: "🍕";
+    padding-left: 440px;
+    padding-right: 440px;
   }
 
-#cities-list li::marker {
-  content: "🍕 ";
-}
+ul {line-height: 1.8;}
 
-ul {
-  line-height: 1.8;
-}
+footer {font-weight: 400;
+      background-color: greenyellow;
+      border-color: pink;
+  }
 
-main ul p {
-  margin-bottom: 0;
-}
-
+  img {
+    width: 400px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    /* border-radius: 50%; */
+  }
