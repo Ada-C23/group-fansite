@@ -1,14 +1,22 @@
-#cities-list li::before {
-  content: "🍕 ";
-  margin-right: 0.5em;
+#cities-list {
+  list-style: none; /* technically redundant with style.css */
+  padding: 0; /* technically redundant with style.css */
+  margin: 0 auto;
+  width: max-content; /* Makes the list only as wide as its contents */
 }
 
-/* {
-  list-style-type: "🍕";
-  padding-left: 440px;
-  padding-right: 440px;
-} */
+#cities-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+#cities-list li::before {
+  content: "🍕";
+  margin-right: 0.5em;
+  text-align: right;
+  min-width: 2em; /* if we use different width emojis for each bulletpoint */
+}
 
 footer {
   font-weight: 400;
