@@ -1,20 +1,29 @@
-#cities-list {
-    list-style-type: "🍕";
-    padding-left: 440px;
-    padding-right: 440px;
-  }
+#cities-list::before {
+  content: "🍕";
+  font-style: normal;
+}
 
-ul {line-height: 1.8;}
+/* {
+  list-style-type: "🍕";
+  padding-left: 440px;
+  padding-right: 440px;
+} */
 
-footer {font-weight: 400;
-      background-color: greenyellow;
-      border-color: pink;
-  }
+ul {
+  line-height: 1.8;
+}
 
-  img {
-    width: 400px;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;
-    /* border-radius: 50%; */
-  }
+footer {
+  font-weight: 400;
+  background-color: greenyellow;
+  border-color: pink;
+  margin-top: 20px;
+}
+
+img {
+  width: 400px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+}
