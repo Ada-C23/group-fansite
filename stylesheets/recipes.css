@@ -1,3 +1,15 @@
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* this adds global formatting */
 * {
   margin: 0;
@@ -15,10 +27,10 @@ body {
 
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background-color: #fffaf5;
   border-radius: 12px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -33,7 +45,7 @@ header p {
 }
 
 nav {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -51,6 +63,7 @@ nav a {
   font-weight: bold;
   color: #a3471d;
   transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -66,18 +79,21 @@ main {
 section h2 {
   font-size: 2rem;
   color: #8a3e0e;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 section h3 {
   font-size: 1.3rem;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
   color: #6d3215;
 }
 
 section img {
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 60%;
 }
 
 section img:hover {
@@ -88,9 +104,9 @@ section img:hover {
 /* Lists */
 ul,
 ol {
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 li {

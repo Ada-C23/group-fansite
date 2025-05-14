@@ -7,15 +7,24 @@ body {
 header img {
   width: 75%;
   margin: 0;
+  border-radius: 10px;
 }
 
 h1 {
   color: lightgoldenrodyellow;
 }
+
 h3 {
   background-color: lightgoldenrodyellow;
   padding: 10px;
   border-radius: 10px;
+  border: 3px solid green;
+  box-shadow: 2px 4px 6px -1px;
+}
+
+h3:hover {
+  background-color: green;
+  color: lightgoldenrodyellow;
 }
 
 main {
@@ -26,3 +35,9 @@ main {
 nav a:hover {
   color: green;
 }
+
+li a {
+  text-decoration: none;
+  color: rgb(100, 71, 27);
+}
+
