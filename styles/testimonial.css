@@ -1,5 +1,7 @@
 
 h1 {
+    height: 240px;
+    padding: 4rem 1rem;
     font-family: "Danfo";
     font-size: 80px;
     text-align: center;
@@ -12,7 +14,7 @@ h1 {
     width: 100%;
     overflow: hidden;
     color: #FFFBF7;
-    background-color: #DF8ED1;
+    background: linear-gradient(135deg, #FF9A8B 0%, #DF8ED1 50%, #FF8E53 100%);
     padding: 10px 0;
 }
 
@@ -105,7 +107,7 @@ blockquote br {
 
 
 
-.internal {
+.internal-conteiner {
     background: url('../assets/img/bg/index-bg-checkered.png');
     max-width: 80%;
     padding: 16px 32px;
@@ -113,7 +115,7 @@ blockquote br {
 }
 
 
-.all header {
+body {
     background-color: whitesmoke;
 }
 
