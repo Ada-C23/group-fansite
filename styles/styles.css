@@ -9,12 +9,23 @@
     black #1A1B1C
 */
 
-
-body {
+/* Reset styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+/* Reset styles */
 
 nav ul{
     display: flex;
@@ -24,16 +35,6 @@ nav ul{
     margin: 1rem 0;
     list-style: none;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
-    margin: 1rem 0;
-    list-style: none;
-}
-
 
 .survived-nav {
     background: linear-gradient(135deg, #FF9A8B 0%, #FF6B95 50%, #FF8E53 100%);
@@ -71,4 +72,14 @@ footer {
     background: white;
     color: #FF6B95;
     font-weight: 700;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    list-style: none;
 }

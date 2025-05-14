@@ -4,14 +4,39 @@
 
 body {
     color: #1A1B1C;
+    margin: 0;
+}
+header {
+    background: linear-gradient(180deg, #F06115 25%, #FFFBF7 100% );
+}
+.survived-nav {
+    background: none;
+    box-shadow: none;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
+/* colors
+    blue #5D76C9
+    orange #F06115
+    pink #DF8ED1
+    green #94911C
+    tan #EAD3C1
+    white #FFFBF7
+    black #1A1B1C
+*/
+html {
+    margin: 0;
+}
 .hero {
     padding: 4rem 1rem;
     text-align: center;
     font-family: "Danfo";
     min-height: 320px;
     max-height: 500px;
+    background-color: #FFFBF7;
 }
 
 .hero h2 {
@@ -94,12 +119,3 @@ article img {
     color:  #FFFBF7;
     margin: 0;
 }
-/* colors
-    blue #5D76C9
-    orange #F06115
-    pink #DF8ED1
-    green #94911C
-    tan #EAD3C1
-    white #FFFBF7
-    black #1A1B1C
-*/
