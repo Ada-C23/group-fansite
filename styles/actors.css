@@ -1,3 +1,30 @@
+.container {
+  display: flex;
+
+
+  justify-content: space-around;
+  background-color: lightgrey;
+  align-items: center;
+}
+
+#top-actors-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 800px;
+    height: 400px;
+  }
+
+#top-actors-list li {
+  text-align: left;
+}
+
+#top-actors-list li a {
+  text-decoration: none;
+}
+
 .actors-nav {
     position: fixed;
     top: 0;
@@ -21,15 +48,8 @@
     padding-top: 10px;
 }
 
-#top-actors-list {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: left; 
-  }
 
 #top-actors-list li::marker {
   content: "⭐️";
 }
-
 
