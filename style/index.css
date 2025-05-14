@@ -9,7 +9,7 @@ header#evyy {
     margin: 0 auto 10px;
     box-shadow: none;
     transition: transform 0.3s ease;
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
@@ -77,6 +77,16 @@ header#evyy nav.navigation a[href="../index.html"]:hover {
 
 body > header#evyy {
     background-color: #ffecf3;
+}
+
+.founding-story {
+    max-width: 900px;
+    margin: 30px auto 50px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #5a3825;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .photo-container {

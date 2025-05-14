@@ -12,18 +12,19 @@
 </head>
 <body>
     <header id="evyy">
-        <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo" width="250">
+        <div class="header-content">
+            <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo">
+            
+            <nav class="navigation">
+                <ul class="main-nav"> 
+                    <li><a href="pages/about_us.html" id="about">About Us</a></li>
+                    <li><a href="pages/our_desserts.html" id="facts">Our Desserts</a></li> 
+                    <li><a href="pages/diy.html" id="recipes">DIY</a></li>
+                    <li><a href="pages/gallery.html" id="gallery">Gallery</a></li> 
+                </ul>
+            </nav>
+        </div>
         
-        <p>A cozy retro café where stories are brewed, and time slows down.</p>
-        
-        <nav class="navigation"> 
-            <ul class="main-nav"> 
-                <li><a href="pages/about_us.html" id="about">About Us</a></li>
-                <li><a href="pages/our_desserts.html" id="facts">Our Desserts</a></li> 
-                <li><a href="pages/diy.html" id="recipes">DIY</a></li>
-                <li><a href="pages/gallery.html" id="gallery">Gallery</a></li> 
-            </ul>
-        </nav>
     </header>
     
     <main>
@@ -36,6 +37,11 @@
             </div>
         </div>
         <p class="photo-caption">A glimpse into the Evyy Cafe experience!</p>
+        
+        <!-- Added paragraph about the founding of Evyy Cafe -->
+        <p class="founding-story">
+            Evyy Café was founded in 2025 by four passionate friends: Ellie, Viktoriya, Yasiel, and Yekaterina, whose initials inspired the café's name. What began as casual baking sessions in Ellie's kitchen blossomed into a shared dream of creating a space where their love for global desserts could be shared with the community. Each founder brings their unique cultural heritage to the menu, resulting in a delightful fusion of flavors from around the world. Today, Evyy Café stands as a testament to friendship, creativity, and the universal language of sweetness that brings people together.
+        </p>
     </main>
     
     <div class="info-container">
@@ -54,18 +60,16 @@
         </div>
     </div>
     
-<footer>
-    <div class="newsletter">
+    <div class="subscribe-section">
         <h3>Subscribe to Our Newsletter</h3>
         <form class="subscribe-form">
             <input type="email" placeholder="Enter your email address" required>
             <button type="submit">Subscribe</button>
         </form>
     </div>
-    <div id="copyright">
+    
+    <footer id="copyright">
         <p>&copy; 2025 Dessert Fans</p>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>

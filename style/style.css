@@ -18,7 +18,7 @@ body {
 
 /* Global paragraph style */
 p {
-    font-size: 20px; /* Increased from browser default */
+    font-size: 22px; /* Increased from browser default */
     line-height: 1.5;
 }
 
