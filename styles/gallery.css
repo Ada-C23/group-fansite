@@ -112,16 +112,7 @@ header {
     position: relative;
 }
 
-<<<<<<< HEAD
 .header-note {
-=======
-.header-container h1 {
-    margin: 0;
-    font-size: 4rem;
-}
-
-.video-frame {
->>>>>>> d79ed28cd9bd215bdaa4fcda928245a2229a67fd
     position: absolute;
     bottom: 1rem;
     left: 1rem;
