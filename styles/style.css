@@ -18,7 +18,7 @@ footer {
 }
 
 footer {
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 
 
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffdd57;
+    color: #c4e272;
     transform: scale(1.05);
 }
 
@@ -56,7 +56,7 @@ section {
 }
 
 h1 {
-    color: #5b3714;
+    color: #c4e272;
     font-weight: 800;
     font-size: 2.5rem;
     margin: 0;

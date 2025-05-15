@@ -1,3 +1,4 @@
+/* Common styles for the whole page */
 body {
     background-image: url("../assets/background.webp");
     background-size: cover;
@@ -5,22 +6,144 @@ body {
     background-position: center;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: screen;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
-
-    text-align: left;      
-    padding: 2rem 4rem;    
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
-strong {
+/* Sep.padding for content */
+main {
+    flex-grow: 1;
+    padding: 2cm 2cm;
+    box-sizing: border-box;
+}
+
+/* Header и Footer */
+header,
+footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #4b0082;
     color: rgb(26, 60, 44);
-    font-size: 1.5rem;
-    font-weight: 900;
-    display: inline;
-    margin-bottom: 0;
-    text-transform: uppercase;  
+    box-sizing: border-box;
 }
 
-.highlight {
-    display: inline;           
+header h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+/* For Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 1rem 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(26, 60, 44);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c4e272;
+}
+
+/* For Containers, cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1cm;
+    box-sizing: border-box;
+}
+
+/* Cards */
+.flip-card {
+    width: 100%;
+    height: 180px;
+    perspective: 1000px;
+    box-sizing: border-box;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front {
+
+    color: rgb(26, 60, 44);
+    background-color: #bfd67f71;
+    /* зелёный с прозрачностью */
+    color: rgb(26, 60, 44);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.flip-back {
+    background-color: #c863e988;
+    color: #310640da;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: justify;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.image-card .flip-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bfd67f71;
+}
+
+.image-card .flip-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
 }
