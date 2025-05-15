@@ -107,8 +107,13 @@ blockquote br {
 
 
 
+<<<<<<< HEAD:styles/testimonial.css
 .internal-container {
     background: url('../assets/img/bg/index-bg-checkered.png');
+=======
+.internal-conteiner {
+    background: url('../assets/images/bg/index-bg-checkered.png');
+>>>>>>> eb407a3b72d95da7279ab9ac9569e93b91dc7ab7:stylesheets/testimonial.css
     max-width: 80%;
     padding: 16px 32px;
     margin: 20px auto;
