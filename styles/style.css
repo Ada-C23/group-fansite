@@ -1,0 +1,27 @@
+
+h1{
+    color: 0e4150;
+    font-family: fantasy;
+}
+
+.short-bio p {
+    padding: 5em;
+    border: 1px solid black;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bio-list{
+    display: inline;
+}
+
+footer {
+    color: 0e4150;
+    font-weight: bold;
+}
