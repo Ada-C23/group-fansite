@@ -58,11 +58,15 @@ main {
 
 /* ====grid=== */
 .container{
-
     border: solid #f5c16c 1px;
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: 20px;
     align-items: center;
+}
+@media (max-width: 600px) {
+    .container {
+    grid-template-columns: 1fr;
+    }
 }
