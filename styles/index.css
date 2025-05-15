@@ -1,13 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
 body {
     color: #1A1B1C;
     margin: 0;
 }
 header {
     background: linear-gradient(180deg, #F06115 25%, #FFFBF7 100% );
+}
+
+.logo {
+    display: flex;
+    padding: 3em 0 0 0;
+    justify-content: center;
+}
+.logo img{
+    max-width: 300px;
 }
 .survived-nav {
     background: none;
@@ -39,7 +45,7 @@ html {
     background-color: #FFFBF7;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 3rem;
     margin: 0;
     font-family: "Danfo";
@@ -48,16 +54,32 @@ html {
     letter-spacing: 1px;
 }
 
+.marqueeContainer {
+    background-color: #DF8ED1;
+    overflow: hidden;
+    width: 100vw;
+}
+
 .marquee {
     font-family: "Bricolage Grotesque";
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFBF7;
-    background-color: #DF8ED1;
     padding: 1rem 0;
     letter-spacing: 0.05em;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+    padding-left: 100%;
 }
+
+    
+@keyframes scroll-left {
+    0% { transform: translateX(0%);}
+    100% { transform: translateX(-100%); }
+}
+
 .group {
     background: url('../assets/img/bg/index-bg-checkered.png');
     background-size: 150px; 
