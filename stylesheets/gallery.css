@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap'); 
+@import url(‘https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap’);
+@import url(‘https://fonts.googleapis.com/css2?family=Kablammo&display=swap’);
+@import url(‘https://fonts.googleapis.com/css2?family=Shizuru&display=swap’);
 /* colors
     blue #5D76C9
     orange #F06115
@@ -15,22 +15,20 @@ body {
     background-attachment: scroll;
     background-image: url() ;
 }
-
 .survived-nav2 {
     background-color:#94911C;
     box-shadow: #F06115;
     padding: 1.5rem 2rem;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);;
-    font-family: "Rubik Puddles";
+    font-family: “Rubik Puddles”;
     text-transform: uppercase;
 }
-
 .title {
-    font-family: "Rubik Puddles";
+    font-family: “Rubik Puddles”;
     font-weight: 600;
     text-align: center;
     text-wrap: pretty;
-    text-shadow: 
+    text-shadow:
     1px 1px 2px #94911C,
     0 0 1em #EAD3C1,
     0 0 0.2em #DF8ED1;
@@ -38,8 +36,6 @@ body {
     background-color: #EAD3C1;
     letter-spacing: 4px;
 }
-
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -48,14 +44,12 @@ body {
     width: 100%;
     padding: 1rem;
 }
-
 .header-container {
     width: 100%;
     height: 40%;
     align-content: center;
     overflow: hidden;
     background: #EAD3C1;
-    
 }
 .member {
     display: grid;
@@ -64,7 +58,6 @@ body {
     gap: 1rem;
     border-radius: 6px;
 }
-
 /* All images */
 .member img {
     width: 100%;
@@ -72,7 +65,6 @@ body {
     object-fit: cover;
     border-radius: 4px;
 }
-
 /* Big image */
 .xl {
     grid-column: span 2;
@@ -85,4 +77,3 @@ body {
     grid-row: span 2;
     aspect-ratio: 1 / 1;
 }
-
