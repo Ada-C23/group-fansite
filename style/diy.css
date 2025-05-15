@@ -66,12 +66,12 @@
 }
 
 .cupcake {
-  color: #ddd;
+  color: #ffc0cb;
   font-size: 25px; 
 }
 
 .cupcake.filled {
-  color: #ffc0cb;
+  color: #f05871;
 }
 
 /* Recipe Times */
