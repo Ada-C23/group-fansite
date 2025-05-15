@@ -17,7 +17,7 @@ body {
 
 /* Global paragraph style */
 p {
-    font-size: 22px; 
+    font-size: 1.2rem; 
     line-height: 1.5;
 }
 
@@ -31,14 +31,14 @@ header {
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #8b0000;
     margin: 0 0 10px 0;
 }
 
 header p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #8b4513;
 }
 
@@ -99,7 +99,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     color: #8b0000;
     margin: 30px 0 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -158,6 +158,18 @@ footer {
     max-width: 600px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Copyright styling */
+footer#copyright, footer {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+footer#copyright p, footer p {
+    font-size: 14px; 
+    color: #777; 
+    font-family: 'Quicksand', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
