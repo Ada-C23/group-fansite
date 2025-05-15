@@ -45,7 +45,7 @@ html {
     background-color: #FFFBF7;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 3rem;
     margin: 0;
     font-family: "Danfo";
@@ -63,7 +63,22 @@ html {
     background-color: #DF8ED1;
     padding: 1rem 0;
     letter-spacing: 0.05em;
+    
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+    padding-left: 100%;
 }
+
+.marqueeContainer {
+    overflow: hidden;
+    }
+    
+@keyframes scroll-left {
+    0% { transform: translateX(0%);}
+    100% { transform: translateX(-100%); }
+}
+
 .group {
     background: url('../assets/img/bg/index-bg-checkered.png');
     background-size: 150px; 
