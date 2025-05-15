@@ -5,12 +5,10 @@ body{
     line-height: normal;
 }
 
-/* .header_container{
-    display: flex;
-} */
-
 .nav_container{
     display: flex;
+    margin: 20px;
+    justify-content: space-between;
 }
 .container {
     display: flex;
@@ -23,8 +21,6 @@ body{
 
 h1 {
     color: #224461;
-    /* text-align: center; */
-    /* display: inline; */
 }
 
 h2 {
@@ -35,8 +31,6 @@ h2 {
 
 nav li {
     list-style: none;
-    border: 2px red solid;
-    /* display: inline; */
 }
 
 ol {
