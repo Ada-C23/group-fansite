@@ -1,212 +1,161 @@
 .gallery-background {
-    background-image: url("../assets//PCl5AZ2gRCqoOTy79dMbCg.webp");
-    background-size: cover;
-    background-position: center;
+    background-color:#f5c091;
+    background-image: url("../assets/PCl5AZ2gRCqoOTy79dMbCg.webp");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    min-width: fit-content;
+    margin: 0;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 1rem;
-    padding: 0;
-    margin: 0 auto;
-    width: 95vw;
-    height: 90vh;
-    background-color: transparent;
+.gallery-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.image-grid picture {
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+
+.center-placeholder {
+    flex: 1 1 600px;
+    height: 500px;
+}
+
+
+.video-wrapper,
+.left-column figure,
+.right-column figure {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(1, 39, 7, 0.7);
+    text-align: center;
+}
+
+.video-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(1, 39, 7, 0.705);
-    overflow: hidden;
+    max-width: 300px;
 }
 
-.image-grid img {
+.video-wrapper iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(1, 39, 7, 0.7);
+}
+
+.video-wrapper figcaption {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.left-column img,
+.right-column img {
     width: 100%;
     height: auto;
-    max-height: 100%;
     border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.image-grid picture:nth-child(1) {
-    grid-area: 1 / 1;
+.left-column img:hover,
+.right-column img:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 
-.image-grid picture:nth-child(2) {
-    grid-area: 1 / 2;
+.left-column figcaption,
+.right-column figcaption {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
 }
 
-.image-grid picture:nth-child(3) {
-    grid-area: 1 / 3;
-}
-
-.image-grid picture:nth-child(4) {
-    grid-area: 1 / 4;
-}
-
-.image-grid picture:nth-child(5) {
-    grid-area: 1 / 5;
-}
-
-.image-grid picture:nth-child(6) {
-    grid-area: 2 / 5;
-}
-
-.image-grid picture:nth-child(7) {
-    grid-area: 3 / 5;
-}
-
-.image-grid picture:nth-child(8) {
-    grid-area: 4 / 5;
-}
-
-.image-grid picture:nth-child(9) {
-    grid-area: 5 / 5;
-}
-
-.image-grid picture:nth-child(10) {
-    grid-area: 5 / 4;
-}
-
-.image-grid picture:nth-child(11) {
-    grid-area: 5 / 3;
-}
-
-.image-grid picture:nth-child(12) {
-    grid-area: 5 / 2;
-}
-
-.image-grid picture:nth-child(13) {
-    grid-area: 5 / 1;
-}
-
-.image-grid picture:nth-child(14) {
-    grid-area: 4 / 1;
-}
-
-.image-grid picture:nth-child(15) {
-    grid-area: 3 / 1;
-}
-
-.image-grid picture:nth-child(16) {
-    grid-area: 2 / 1;
-}
-
-.image-grid picture:nth-child(17) {
-    grid-area: 2 / 2;
-}
-
-.image-grid a {
+.left-column a,
+.right-column a,
+.video-wrapper a {
     text-decoration: none;
     color: rgb(26, 60, 44);
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
     text-shadow: 1px 1px 1px rgba(0, 1, 0, 0.815);
-    padding: 0.5rem;
-    display: block;
 }
 
-.image-grid a:hover {
+.left-column a:hover,
+.right-column a:hover,
+.video-wrapper a:hover {
     color: #ffdd57;
     transform: scale(1.05);
 }
 
-.header-container {
+header {
     position: relative;
-    text-align: center;
-    padding: 20px 0;
 }
 
-.header-container h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-.video-frame {
+.header-note {
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    border: none;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.25rem 0.75rem;
+    border: 1px dashed #1a3c2c;
+    background-color: transparent;
+    color:  #c4e272;
+    border-radius: 4px;
+    text-align: left;
+    z-index: 10;
+    max-width: 220px;
+    line-height: 1.2;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .gallery-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column,
+    .right-column {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .video-wrapper {
+        max-width: 100%;
+    }
 }
 
 
-.centerpiece {
-    grid-area: 3 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 1rem;
+.left-column figcaption,
+.right-column figcaption,
+.video-wrapper figcaption,
+.left-column a,
+.right-column a,
+.video-wrapper a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-shadow: none;
 }
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-
-/* Apply square shape to all images */
-.image-grid img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-}
-
-/*
-.gallery-background {
-    background-image: url("../assets/Kirks-dik-dik.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-    border-radius: 12px;
-    background-color: transparent; 
-}
-
-.image-grid figure {
-    margin: 0;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.image-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.image-grid figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.image-grid a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-.image-grid a:hover {
-    text-decoration: none;
-    border-bottom: 2px solid #0077cc;
-    background: linear-gradient(to right, #14532d, #3f9a4c, #d9f99d);
-}
-*/

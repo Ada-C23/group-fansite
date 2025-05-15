@@ -4,193 +4,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dik-Dik Gallery</title>
+  <title>Dik-Diks Gallery</title>
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <style>
-    .header-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .gallery-background {
-      background-image: url("../assets/PCl5AZ2gRCqoOTy79dMbCg.webp");
-      background-size: cover;
-      background-position: center;
-      padding: 2rem;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      gap: 1rem;
-    }
-
-    .image-grid img {
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .centerpiece {
-      grid-area: 3 / 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .image-grid h2 {
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <div class="header-container">
-      <h1>Dik-Dik Photo Gallery</h1>
-      <iframe width="180" height="100" src="https://www.youtube.com/embed/YwuLQMTD66s" title="YouTube video player"
-        class="video-frame" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+<header>
+  <div class="header-note">
+    <p>* click on the picture text to see and read more about Dik-Dik</p>
+  </div>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="all-about.html">All About Dik-Diks</a></li>
-        <li><a href="fun-facts.html">Fun Facts</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Dik-Diks Gallery</h1>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="all-about.html">All About</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="fun-facts.html">Fun Facts</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main class="gallery-background">
-    <section class="image-grid">
-      <h2>Dik-Dik Photo Gallery</h2>
-      <a href="https://www.redbubble.com/i/photographic-print/You-re-Such-A-Dik-Dik-by-PokeJade/45222981.6Q0TX"
-        target="_blank">
-        <picture>
-          <img src="../assets/dik-dik-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Funny dik-dik print">
-        </picture>
-      </a>
+    <div class="gallery-layout">
 
-      <a href="https://africafreak.com/dik-dik" target="_blank">
-        <picture>
-          <img src="../assets/Kirks-dik-dik.jpg" alt="Kirks dik-dik">
-        </picture>
-      </a>
+      <div class="left-column">
+        <figure class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/YwuLQMTD66s" title="Dik-Dik Story on YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <figcaption>
+            <a href="https://www.youtube.com/watch?v=YwuLQMTD66s" target="_blank">
+              Click the video to see the story about Dik-Dik
+            </a>
+          </figcaption>
+        </figure>
 
-      <a href="https://africafreak.com/dik-dik" target="_blank">
-        <picture>
-          <img src="../assets/Kirk-dik-dik%20(1).webp" alt="Kirk dik-dik standing still">
-        </picture>
-      </a>
+        <figure>
+          <img src="../assets/African-cute-baby-dik-dik-antelope-Graphics-76784581-1-1-580x387.jpg" alt="Cute dik-dik looking up">
+          <figcaption>
+            <a href="https://images.app.goo.gl/57ACUBERWSXFP9o88" target="_blank">Cute dik-dik pictures for kids</a>
+          </figcaption>
+        </figure>
 
-      <a href="https://africafreak.com/dik-dik" target="_blank">
-        <picture>
-          <img src="../assets/dik-dik-pair.jpg" alt="Pair of dik-diks">
-        </picture>
-      </a>
-
-      <a href="https://images.app.goo.gl/57ACUBERWSXFP9o88" target="_blank">
-        <picture>
-          <img src="../assets/PCl5AZ2gRCqoOTy79dMbCg.webp" alt="Cute dik-dik looking up">
-        </picture>
-      </a>
-
-      <a href="https://johanhoekstracollection.wordpress.com/category/dik-dik-antelope/" target="_blank">
-        <picture>
-          <img src="../assets/dik-dik-not-dated-johan-hoekstra-wildlife-art.jpg" alt="Dik-dik painting">
-        </picture>
-      </a>
-
-      <a href="https://mystart.com/blog/meet-the-dik-dik-natures-pocket-sized-wonder/" target="_blank">
-        <picture>
-          <img src="../assets/dikdik.webp" alt="Dik-dik in nature">
-        </picture>
-      </a>
-
-      <a href="https://mystart.com/blog/meet-the-dik-dik-natures-pocket-sized-wonder/" target="_blank">
-        <picture>
-          <img src="../assets/dik-dikk.webp" alt="Dik-dik looking forward">
-        </picture>
-      </a>
-
-      <a href="https://mystart.com/blog/meet-the-dik-dik-natures-pocket-sized-wonder/" target="_blank">
-        <picture>
-          <img src="../assets/dik-dik-Tarangire.jpg" alt="Dik-dik in Tarangire">
-        </picture>
-      </a>
-
-      <a href="https://www.istockphoto.com/photos/dik-dik-deer" target="_blank">
-        <picture>
-          <img src="../assets/dik-dik-facts-conclusion.jpg" alt="Dik-dik standing">
-        </picture>
-      </a>
-
-      <a href="https://www.britannica.com/animal/dik-dik" target="_blank">
-        <picture>
-          <img src="../assets/Kirk-dik-dik.webp" alt="Kirk dik-dik alert">
-        </picture>
-      </a>
-
-      <a href="https://www.reddit.com/r/Awwducational/comments/tbnhr4/meet_the_dikdik_the_bare_black_spot_below_the/"
-        target="_blank">
-        <picture>
-          <img src="../assets/8sbii3189zg71.webp" alt="Dik-dik with spot under eye">
-        </picture>
-      </a>
-
-      <a href="https://grist.org/living/this-orphaned-dik-dik-may-be-the-cutest-animal-weve-ever-encountered/"
-        target="_blank">
-        <picture>
-          <img src="../assets/this-is-a-dik-dik-its-cute-and-has-a-funny-name-v0-wim79fkn49f81.webp"
-            alt="Orphaned dik-dik">
-        </picture>
-      </a>
-
-      <a href="https://www.reddit.com/r/biology/comments/1fxswn9/its_not_a_fictional_creature_its_just_kirks_dikdik/"
-        target="_blank">
-        <picture>
-          <img src="../assets/its-not-a-fictional-creature-its-just-kirks-dik-dik-v0-vzx3tej6r7td1.webp"
-            alt="Kirks dik-dik stare">
-        </picture>
-      </a>
-
-      <a href="https://www.marwell.org.uk/zoo-news/adorable-dik-dik-calf/" target="_blank">
-        <picture>
-          <img src="../assets/Kirks-dik-dik-marwell-zoo-Credit-Helen-Pinchin.jpg" alt="Baby dik-dik at zoo">
-        </picture>
-      </a>
-
-      <a href="https://www.britannica.com/animal/dik-dik" target="_blank">
-        <picture>
-          <img src="../assets/Kirk-dik-dik.webp" alt="Extra Dik-dik for symmetry">
-        </picture>
-      </a>
-
-      <div class="centerpiece">
-        Press pictures to see more
+        <figure>
+          <img src="../assets/dik-dik-not-dated-johan-hoekstra-wildlife-art.jpg" alt="Dik-dik wildlife art">
+          <figcaption>
+            <a href="https://www.google.com/search?sca_esv=70b5c3d27dd6e643&sxsrf=AHTn8zrCwrMUN-uc0bMy3_JB4q_9YxocSg:1747340045104&q=kirk%27s+dik+animal+Dik+dik+pictures+safe+content&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRPtuVj0u_OdllkxDbEQdhqhghDhT8yc3LHSFpblMQFeLTvXz_q6eoS_5m2emiDdxBUg919t_awCTV7OxSQ4X-JpkkDmAXry3DuLlcrcM_pKFyhffQGl1GCf6WIJNMSp8SfDNeRCs5O_U1M5JuD8knNSOu95F8IutQ7lfdnQEniYqw2lzV&udm=2&sa=X&ved=2ahUKEwinzML1pKaNAxVVJjQIHbGOPFEQxKsJegQICxAB&ictx=0&biw=1012&bih=1278&dpr=2/" target="_blank">
+            More pictures / </picture></a>
+            <a href="https://johanhoekstracollection.wordpress.com/category/dik-dik-antelope/" target="_blank">
+              poster author Johan Hoekstra</a>
+          </figcaption>
+        </figure>
       </div>
 
-    </section>
+      <div class="right-column">
+        <figure>
+          <img src="../assets/Dik-dik_(male)_-Tarangire_National_Park_-Tanzania.jpg"
+            alt="Dik-dik in Tarangire National Park">
+          <figcaption>
+            <a href="https://en.wikipedia.org/wiki/Dik-dik" target="_blank">Dik-diks are herbivores</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/Mother and Baby.jpg" alt="Mother dik-dik in nature">
+          <figcaption>
+            <a href="https://mystart.com/blog/meet-the-dik-dik-natures-pocket-sized-wonder/" target="_blank">
+              Dik-Dik mothers are paragons of nurturing care</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/dik-dik-Tarangire.jpg" alt="Close-up of dik-dik with big eyes">
+          <figcaption>
+            <a href="https://mystart.com/blog/meet-the-dik-dik-natures-pocket-sized-wonder/" target="_blank">
+              Big Eyes, Big Advantage</a>
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Team Dik-Dik Explorers. All rights reserved.</p>
   </footer>
+
 </body>
 
 </html>
