@@ -1,5 +1,5 @@
 .gallery-background {
-    background-color:#f5c091;
+    background-color: #f5c091;
     background-image: url("../assets/PCl5AZ2gRCqoOTy79dMbCg.webp");
     background-size: auto;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ header {
     padding: 0.25rem 0.75rem;
     border: 1px dashed #1a3c2c;
     background-color: transparent;
-    color:  #c4e272;
+    color: #c4e272;
     border-radius: 4px;
     text-align: left;
     z-index: 10;
@@ -129,7 +129,6 @@ header {
     line-height: 1.2;
 }
 
-/* Адаптация для мобильных */
 @media (max-width: 768px) {
     .gallery-layout {
         flex-direction: column;
