@@ -54,25 +54,26 @@ html {
     letter-spacing: 1px;
 }
 
+.marqueeContainer {
+    background-color: #DF8ED1;
+    overflow: hidden;
+    width: 100vw;
+}
+
 .marquee {
     font-family: "Bricolage Grotesque";
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFBF7;
-    background-color: #DF8ED1;
     padding: 1rem 0;
     letter-spacing: 0.05em;
-    
     display: inline-block;
     white-space: nowrap;
     animation: scroll-left 20s linear infinite;
     padding-left: 100%;
 }
 
-.marqueeContainer {
-    overflow: hidden;
-    }
     
 @keyframes scroll-left {
     0% { transform: translateX(0%);}
