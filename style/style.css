@@ -1,5 +1,4 @@
-/* Google Fonts import - add to HTML head */
-/* <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> */
+
 
 /* Reset and base styles */
 * {
@@ -18,7 +17,7 @@ body {
 
 /* Global paragraph style */
 p {
-    font-size: 22px; /* Increased from browser default */
+    font-size: 1.2rem; 
     line-height: 1.5;
 }
 
@@ -32,20 +31,19 @@ header {
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #8b0000;
     margin: 0 0 10px 0;
 }
 
 header p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #8b4513;
 }
 
-/* Navigation styles - Moved inside header */
-nav.navigation {
-    background-color: transparent; /* Remove background so it blends with header */
+=nav.navigation {
+    background-color: transparent; 
     padding: 10px 20px 20px;
     margin: 10px auto 0;
     max-width: 800px;
@@ -70,7 +68,7 @@ nav a {
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
     transition: all 0.3s ease;
-    padding: 8px 15px;
+    padding: px 15px;
     display: inline-block;
     border-bottom: 2px solid transparent;
     font-size: 16px;
@@ -101,7 +99,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     color: #8b0000;
     margin: 30px 0 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -162,34 +160,41 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Copyright styling */
+footer#copyright, footer {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+footer#copyright p, footer p {
+    font-size: 14px; 
+    color: #777; 
+    font-family: 'Quicksand', sans-serif;
+}
+
 @media screen and (max-width: 768px) {
-    /* This targets all navigation elements */
-    nav.navigation ul {
+    nav ul {
         flex-direction: column;
-        align-items: center;
+        padding: 0;
     }
     
-    nav.navigation li {
-        margin: 8px 0;
+    nav li {
+        margin: 10px 0;
     }
     
-    /* This specifically targets navigation buttons in the header */
-    header#evyy nav.navigation a {
+    nav a {
         display: block;
-        margin: 0 auto 10px;
-        width: auto;
-        min-width: 200px;
+        width: 100%;
+        margin: 0 auto;
         max-width: 250px;
-        text-align: center;
     }
     
-    /* Fix any padding issues */
-    header#evyy nav.navigation {
-        padding: 10px 0;
+    header#evyy nav.navigation a {
+        margin-bottom: 15px;
+        padding: 0px 20px;
     }
     
-    /* Fix for Home button on the homepage */
-    header h1 {
-        font-size: 2rem;
+    header#evyy nav.navigation a[href="../index.html"] {
+        margin-bottom: 15px;
     }
 }
