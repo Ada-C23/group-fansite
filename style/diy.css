@@ -61,7 +61,7 @@
 
 .difficulty span {
   font-family: 'Quicksand', sans-serif;
-  color: #8b4513;
+  color: #ffc0cb;
   font-size: 1.25rem; /* 25% bigger than 1rem */
 }
 
@@ -71,7 +71,7 @@
 }
 
 .cupcake.filled {
-  color: #ffc0cb;
+  color: #404040;
 }
 
 /* Recipe Times */

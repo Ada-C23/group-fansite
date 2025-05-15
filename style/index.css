@@ -122,6 +122,15 @@ body > header#evyy {
     font-size: 16px;
 }
 
+.cafe-gif {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
 .info-container {
     display: flex;
     justify-content: center;
@@ -237,6 +246,7 @@ body > header#evyy {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border: 2px solid white;
   text-decoration: none;
+} /* Added closing brace here */
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
@@ -255,6 +265,4 @@ body > header#evyy {
         width: 100%;
         background-color: #ffc0cb;
     }
-}
-
 }
