@@ -46,7 +46,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
-    max-height: 500px;
+    max-height: none;
     padding: 1rem;
 }
 
@@ -60,17 +60,22 @@ body {
 }
 .member {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 60px);
+    gap: 5px;
+    background-color: #999;
+    padding: 5px;
     border-radius: 6px;
 }
 /* All images */
-.member img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
+.member {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px); /* antes 60px */
+    gap: 5px;
+    background-color: #999;
+    padding: 5px;
+    border-radius: 6px;
 }
 /* Big image */
 .xl {
