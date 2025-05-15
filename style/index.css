@@ -79,7 +79,36 @@ body > header#evyy {
     background-color: #ffecf3;
 }
 
+.quote {
+    max-width: 900px;
+    margin: 30px auto 50px;
+    font-size: 30px;
+    line-height: 1.7;
+    color: #5a3825;
+    text-align: center;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .founding-story {
+    max-width: 900px;
+    margin: 30px auto 50px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #5a3825;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.special-title{
+    text-align: center;
+    color: #5a3825;  
+    font-family: "Cabin Sketch", sans-serif;
+}
+
+.special-offer {
     max-width: 900px;
     margin: 30px auto 50px;
     font-size: 20px;
@@ -170,6 +199,7 @@ body > header#evyy {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .subscribe-form {
