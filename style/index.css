@@ -1,35 +1,45 @@
+/* Header container */
 header#evyy {
     background-color: #ffecf3;
     border-bottom: 3px solid #ffc0cb;
     padding: 20px 0 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+/* Logo styling - placed in first column */
 #logo {
     display: block;
-    margin: 0 auto 10px;
     box-shadow: none;
     transition: transform 0.3s ease;
-    width: 350px;
+    width: 250px;
     height: auto;
+    margin: 0;
+    grid-column: 1;
 }
 
 #logo:hover {
     transform: scale(1.05);
 }
 
-header#evyy p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
-    color: #8b4513;
-    margin-bottom: 15px;
-}
-
+/* Navigation container - placed in middle column */
 header#evyy nav.navigation {
-    margin-top: 10px;
-    border-top: none;
-    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Navigation list */
 .main-nav {
     list-style-type: none;
     padding: 0;
@@ -40,9 +50,10 @@ header#evyy nav.navigation {
 }
 
 .main-nav li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
+/* Navigation links */
 header#evyy nav.navigation a {
     background-color: transparent;
     border: 2px solid #ffc0cb;
@@ -52,6 +63,7 @@ header#evyy nav.navigation a {
     font-size: 18px;
     text-decoration: none;
     color: #8b0000;
+    display: inline-block;
 }
 
 header#evyy nav.navigation a:hover {
@@ -61,23 +73,35 @@ header#evyy nav.navigation a:hover {
     border-color: #ffc0cb;
 }
 
-header#evyy nav.navigation a[href="../index.html"] {
-    background-color: transparent;
-    border: 2px solid #ffc0cb;
-    border-radius: 30px;
-    padding: 8px 20px;
-    font-size: 18px;
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .header-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    
+    #logo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+    
+    header#evyy nav.navigation {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+    }
+    
+    .main-nav li {
+        margin: 5px 10px;
+    }
 }
 
-header#evyy nav.navigation a[href="../index.html"]:hover {
-    background-color: #ffc0cb;
-    color: white;
-    transform: translateY(-3px);
-}
 
-body > header#evyy {
-    background-color: #ffecf3;
-}
 
 .quote {
     max-width: 900px;
@@ -276,7 +300,7 @@ body > header#evyy {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border: 2px solid white;
   text-decoration: none;
-} /* Added closing brace here */
+}
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
@@ -296,3 +320,16 @@ body > header#evyy {
         background-color: #ffc0cb;
     }
 }
+
+/* Add accessibility helper class */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+

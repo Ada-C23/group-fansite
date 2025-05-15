@@ -8,15 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
   <link href="style/index.css" rel="stylesheet">
+  <style>
+    body.home-page {
+        background-color: #ffffff; 
+    }
+    
+    .home-page footer {
+        background-color: #ffffff !important; /
+    }
+  </style>
 </head>
-<body>
+<body class="home-page">
     <header id="evyy">
         <div class="header-content">
-            <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo" width="350" height="auto">
+            <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo" width="250" height="auto">
             
             <nav class="navigation">
                 <ul class="main-nav"> 
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="pages/about_us.html" id="about">About Us</a></li>
                     <li><a href="pages/our_desserts.html" id="facts">Our Desserts</a></li> 
                     <li><a href="pages/diy.html" id="recipes">DIY</a></li>
@@ -24,34 +35,32 @@
                 </ul>
             </nav>
         </div>
-        
     </header>
     
     <main>
         <div class="quote">
-          “A party without cake is just a meeting.”
+          "A party without cake is just a meeting."
           — Julia Child
         </div>
         <div class="photo-container">
             <div class="photo-box">
-                <img class="cafe-image" alt="Evyy Cafe outdoor seating area with pastel decor" src="images/eevy-patio.png" width="450" height="300">
+                <img class="cafe-image" alt="Evyy Cafe outdoor seating area with pastel pink tables and chairs under cream-colored umbrellas" src="images/eevy-patio.png" width="450" height="300">
             </div>
             <div class="photo-box">
-                <img class="cafe-image" alt="Our baking crew preparing desserts in the kitchen" src="images/bakingcrew.webp" width="450" height="300">
+                <img class="cafe-image" alt="Four bakers in white aprons and chef hats preparing desserts together in the kitchen" src="images/bakingcrew.webp" width="450" height="300">
             </div>
         </div>
         <p class="photo-caption">A glimpse into the Evyy Cafe experience!</p>
         
-        <!-- Added paragraph about the founding of Evyy Cafe -->
         <p class="founding-story">
             Evyy Café was founded in 2025 by four passionate friends: Ellie, Viktoriya, Yasiel, and Yekaterina, whose initials inspired the café's name. What began as casual baking sessions in Ellie's kitchen blossomed into a shared dream of creating a space where their love for global desserts could be shared with the community. Each founder brings their unique cultural heritage to the menu, resulting in a delightful fusion of flavors from around the world. Today, Evyy Café stands as a testament to friendship, creativity, and the universal language of sweetness that brings people together.
         </p>
 
-<div class="gif-container">
-    <img src="https://media.tenor.com/naYMunSvaa8AAAAj/eating-cake.gif" alt="Animation of a character eating cake" class="cafe-gif">
-</div>
-
+        <div class="gif-container">
+            <img src="https://media.tenor.com/naYMunSvaa8AAAAj/eating-cake.gif" alt="Animation of a cartoon character happily eating cake" class="cafe-gif">
+        </div>
     </main>
+    
     <div class="thur-special">
         <h2 class="special-title">
             Thursday Special
@@ -80,23 +89,23 @@
     <div class="subscribe-section">
         <h3>Subscribe to Our Newsletter</h3>
         <form class="subscribe-form">
-            <input type="email" placeholder="Enter your email address" required>
+            <label for="email-subscription" class="visually-hidden">Email Address</label>
+            <input type="email" id="email-subscription" placeholder="Enter your email address" required>
             <button type="submit">Subscribe</button>
         </form>
     </div>
 
-<div class="social-media">
-  <a href="https://instagram.com" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://facebook.com" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://twitter.com" target="_blank" class="social-icon">
-    <i class="fab fa-twitter"></i>
-  </a>
-</div>
-
+    <div class="social-media">
+        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Follow us on Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
     
     <footer id="copyright">
         <p>&copy; 2025 Dessert Fans</p>
