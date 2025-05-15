@@ -6,6 +6,15 @@ body {
 header {
     background: linear-gradient(180deg, #F06115 25%, #FFFBF7 100% );
 }
+
+.logo {
+    display: flex;
+    padding: 3em 0 0 0;
+    justify-content: center;
+}
+.logo img{
+    max-width: 300px;
+}
 .survived-nav {
     background: none;
     box-shadow: none;
