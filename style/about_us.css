@@ -24,19 +24,13 @@
 }
 
 
-#cakes {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
 
 /* Baker cards container */
 .baker-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
   margin: 0 auto;
 }
 
@@ -44,7 +38,7 @@
 .baker-card {
   width: 45%;
   min-width: 400px;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

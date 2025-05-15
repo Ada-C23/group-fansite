@@ -11,7 +11,7 @@ header#evyy {
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 /* Logo styling - placed in first column */
@@ -37,6 +37,7 @@ header#evyy nav.navigation {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* Navigation list */
@@ -47,6 +48,7 @@ header#evyy nav.navigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .main-nav li {
@@ -91,6 +93,9 @@ header#evyy nav.navigation a:hover {
     header#evyy nav.navigation {
         grid-column: 1;
         grid-row: 2;
+        width: 100%;
+        justify-content: center;
+    }       
     }
     
     .contact-container {
@@ -101,12 +106,15 @@ header#evyy nav.navigation a:hover {
     
     .main-nav {
         flex-wrap: wrap;
-    }
+        width: 100%;
+        justify-content: center;
+        }
     
     .main-nav li {
         margin: 5px 10px;
+        text-align: center;
+
     }
-}
 
 /* White background for home page */
     body.home-page {
