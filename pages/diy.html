@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DIY - Evyy Cafe</title>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/diy.css">
 </head>
 <body>
   <header id="evyy">
@@ -30,54 +32,165 @@
     <h2>Our Favorite Dessert Recipes</h2>
     <p>Welcome to Evyy Cafe's most cherished dessert recipes! These delightful treats are customer favorites at our cozy cafe, and now you can recreate the magic in your own kitchen. Each recipe has been carefully selected by our team – Ellie, Viktoriya, Yasiel, and Yekaterina – to bring a taste of our retro cafe experience to your home. Enjoy these global desserts that tell stories as rich as their flavors!</p>
     
-    <div>
-      <img src="../images/bakingathome.png" alt="Person baking desserts at home with ingredients and equipment spread out" width="600" height="400">
+
+    <div class="recipe-cards">
+      <div class="recipe-card">
+        <img src="../images/Devils-Food-Cake.jpg" alt="Devil's Food Cake - A rich, moist chocolate cake with deep cocoa flavor">
+        <h3>Devil's Food Cake</h3>
+        <div class="difficulty">
+          <span>Difficulty:</span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake"><i class="fas fa-birthday-cake"></i></span>
+        </div>
+        <div class="recipe-times">
+          <div class="time-block">
+            <i class="fas fa-clock"></i>
+            <span>Prep<br>30 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-temperature-high"></i>
+            <span>Bake<br>35 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-utensils"></i>
+            <span>Serves<br>10-12</span>
+          </div>
+        </div>
+        <p>This American classic is one of Ellie's specialties at Evyy Cafe. Our customers adore the deep chocolate flavor and impossibly moist texture.</p>
+        <a href="https://www.laurainthekitchen.com/recipes/devils-food-cake/" target="_blank" class="recipe-link">View Full Recipe</a>
+      </div>
+
+      <div class="recipe-card">
+        <img src="../images/Tres-Leches-Cake.jpg" alt="Tres Leches - A classic Latin American sponge cake soaked in three types of milk">
+        <h3>Tres Leches</h3>
+        <div class="difficulty">
+          <span>Difficulty:</span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+        </div>
+        <div class="recipe-times">
+          <div class="time-block">
+            <i class="fas fa-clock"></i>
+            <span>Prep<br>25 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-snowflake"></i>
+            <span>Chill<br>4 hrs</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-utensils"></i>
+            <span>Serves<br>9-12</span>
+          </div>
+        </div>
+        <p>Yasiel brought this Latin American treasure to our menu, and it quickly became a weekend special that sells out by noon.</p>
+        <a href="https://www.mikaleon.com/post/tres-leches" target="_blank" class="recipe-link">View Full Recipe</a>
+      </div>
+
+      <div class="recipe-card">
+        <img src="../images/woodpile-crepe-cake.jpg" alt="Woodpile Cake - A traditional Moldovan layered crepe cake with cherries">
+        <h3>Woodpile Cake / Crepe Cake</h3>
+        <div class="difficulty">
+          <span>Difficulty:</span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+        </div>
+        <div class="recipe-times">
+          <div class="time-block">
+            <i class="fas fa-clock"></i>
+            <span>Prep<br>45 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-temperature-high"></i>
+            <span>Cook<br>30 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-snowflake"></i>
+            <span>Chill<br>2 hrs</span>
+          </div>
+        </div>
+        <p>Yekaterina's Moldovan heritage shines through in this beautiful layered dessert with delicate layers and subtle flavors.</p>
+        <a href="https://creativeinmykitchen.com/sugar-free-lectin-free-crepe-cake-cusma-lui-guguta/" target="_blank" class="recipe-link">View Full Recipe</a>
+      </div>
+
+      <div class="recipe-card">
+        <img src="../images/napoleon-cake.webp" alt="Napoleon Cake - A layered pastry dessert with flaky puff pastry and creamy custard">
+        <h3>Napoleon Cake</h3>
+        <div class="difficulty">
+          <span>Difficulty:</span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+          <span class="cupcake filled"><i class="fas fa-birthday-cake"></i></span>
+        </div>
+        <div class="recipe-times">
+          <div class="time-block">
+            <i class="fas fa-clock"></i>
+            <span>Prep<br>1 hr</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-temperature-high"></i>
+            <span>Bake<br>30 min</span>
+          </div>
+          <div class="time-block">
+            <i class="fas fa-snowflake"></i>
+            <span>Chill<br>6 hrs</span>
+          </div>
+        </div>
+        <p>Viktoriia's version of this Russian classic has a unique spice blend that reflects her Central Asian roots.</p>
+        <a href="https://www.olgasflavorfactory.com/recipes/sweets/cakes/napoleon-cake/" target="_blank" class="recipe-link">View Full Recipe</a>
+      </div>
     </div>
 
-    <section id="devils-food-cake">
-      <h3>Devil's Food Cake</h3>
-      <div>
-        <p><strong>Preparation Time:</strong> 30 minutes</p>
-        <p><strong>Cooking Time:</strong> 35 minutes</p>
-        <p><strong>Servings:</strong> 10-12</p>
+    <!-- User Gallery Section -->
+    <section class="user-gallery">
+      <h3>Your Evyy Cafe Creations!</h3>
+      <p>We love seeing your attempts at our recipes! Tag us on social media with #EvyyCafeBakes or email your photos to share@evyycafe.com to be featured in our gallery.</p>
+      
+      <div class="gallery-container">
+        <div class="user-creation">
+          <img src="../images/Devils-Food-Cake.jpg" alt="User-created Devil's Food Cake">
+          <div class="user-info">
+            <p class="user-name">By: Maria T.</p>
+            <p class="user-quote">"Best chocolate cake I've ever made!"</p>
+          </div>
+        </div>
+        
+        <div class="user-creation">
+          <img src="../images/Tres-Leches-Cake.jpg" alt="User-created Tres Leches">
+          <div class="user-info">
+            <p class="user-name">By: David W.</p>
+            <p class="user-quote">"My family couldn't believe I made this!"</p>
+          </div>
+        </div>
+        
+        <div class="user-creation">
+          <img src="../images/woodpile-crepe-cake.jpg" alt="User-created Woodpile Cake">
+          <div class="user-info">
+            <p class="user-name">By: Sarah L.</p>
+            <p class="user-quote">"Time-consuming but totally worth it!"</p>
+          </div>
+        </div>
       </div>
-      <p>This American classic is one of Ellie's specialties at Evyy Cafe. Our customers adore the deep chocolate flavor and impossibly moist texture. We often serve it with a scoop of homemade vanilla bean ice cream for a perfect contrast of flavors.</p>
-      <a href="https://www.laurainthekitchen.com/recipes/devils-food-cake/" target="_blank">View Full Recipe</a>
-    </section>
-
-    <section id="tres-leches">
-      <h3>Tres Leches</h3>
-      <div>
-        <p><strong>Preparation Time:</strong> 25 minutes</p>
-        <p><strong>Chilling Time:</strong> 4 hours (or overnight)</p>
-        <p><strong>Servings:</strong> 9-12</p>
+      
+      <div class="submit-creation">
+        <h4>Share Your Creation</h4>
+        <form class="creation-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <select required>
+            <option value="" disabled selected>Select Recipe</option>
+            <option value="devils">Devil's Food Cake</option>
+            <option value="tres">Tres Leches</option>
+            <option value="woodpile">Woodpile Cake</option>
+            <option value="napoleon">Napoleon Cake</option>
+          </select>
+          <textarea placeholder="Tell us about your experience!" rows="3" required></textarea>
+          <button type="button" class="file-upload">Upload Photo</button>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
       </div>
-      <p>Yasiel brought this Latin American treasure to our menu, and it quickly became a weekend special that sells out by noon. The three-milk soak creates a dessert that's rich yet light, making it the perfect companion to our house-blend coffee.</p>
-      <a href="https://www.mikaleon.com/post/tres-leches" target="_blank">View Full Recipe</a>
-    </section>
-
-    <section id="cusma-guguta">
-      <h3>Woodpile Cake / Crepe Cake</h3>
-      <div>
-        <p><strong>Preparation Time:</strong> 45 minutes</p>
-        <p><strong>Cooking Time:</strong> 30 minutes (for all crepes)</p>
-        <p><strong>Chilling Time:</strong> 2 hours</p>
-        <p><strong>Servings:</strong> 8-10</p>
-      </div>
-      <p>Yekaterina's Moldovan heritage shines through in this beautiful layered dessert. Drawing from her childhood memories in Moldova, she introduced this traditional crepe cake to our menu, where its delicate layers and subtle flavors have made it a customer favorite for special occasions.</p>
-      <a href="https://creativeinmykitchen.com/sugar-free-lectin-free-crepe-cake-cusma-lui-guguta/" target="_blank">View Full Recipe</a>
-    </section>
-
-    <section id="napoleon-cake">
-      <h3>Napoleon Cake</h3>
-      <div>
-        <p><strong>Preparation Time:</strong> 1 hour</p>
-        <p><strong>Baking Time:</strong> 30 minutes</p>
-        <p><strong>Chilling Time:</strong> 6 hours (or overnight)</p>
-        <p><strong>Servings:</strong> 10-12</p>
-      </div>
-      <p>Viktoriia, who grew up in Central Asia, introduced us to this beloved Eurasian classic. Her version of Napoleon Cake features a delicate spice blend that reflects her heritage and adds a distinctive twist to the traditional custard-and-pastry layers. It's now one of our signature desserts, cherished for its rich texture, depth of flavor, and heartfelt connection to home traditions.</p>
-      <a href="https://www.olgasflavorfactory.com/recipes/sweets/cakes/napoleon-cake/" target="_blank">View Full Recipe</a>
     </section>
   </main>
 
