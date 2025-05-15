@@ -16,7 +16,6 @@ h4{
 
 ol {
     text-align: left;
-
 }
 
 
@@ -140,3 +139,9 @@ li:hover {
     grid-row: 2/5;
     grid-column: 3/4;
 }
+
+/* p::first-letter{
+
+    font-weight: bold;
+    font-size: xx-large;
+} */
