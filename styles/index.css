@@ -23,6 +23,7 @@ hr {
 
 #about_dik-dik {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
