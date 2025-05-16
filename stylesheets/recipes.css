@@ -1,0 +1,134 @@
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* this adds global formatting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffaf4;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: #fffaf5;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #a3471d;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #5a3e2b;
+  margin-top: 0.5rem;
+}
+
+nav {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #ffe6c7;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #a3471d;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ff884d;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #8a3e0e;
+  margin-top: 1rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #6d3215;
+}
+
+section img {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 60%;
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #d9480f;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff7c4d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
