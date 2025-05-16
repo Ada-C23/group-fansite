@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f7fa;
-    background-image: url("../assets/background_5653.webp");
+    background-image: url("../assets/savanna-pattern.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -123,24 +123,23 @@ section:hover {
     text-align: center;
     margin: 2rem auto;
     max-width: 1200px;
-    padding: 15px 30px; /* Increased padding for the box */
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    border-radius: 8px; /* Rounded corners */
-    display: inline-block; /* Makes the box fit the content */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-    border: 1px solid #e8d9b5; /* Light tan border */
+    padding: 15px 30px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    display: inline-block; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border: 1px solid #e8d9b5; 
 }
 
 .facts-heading h2 {
     font-family: 'Gloria Hallelujah', cursive;
-    color: #5a4a42; /* Dark brown to match your text */
+    color: #5a4a42; 
     font-size: 2.2rem;
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0; 
     position: relative;
 }
 
-/* Keep your decorative elements */
 .facts-heading h2::before,
 .facts-heading h2::after {
     content: "";
@@ -148,7 +147,7 @@ section:hover {
     top: 50%;
     width: 50px;
     height: 2px;
-    background: #e8d9b5; /* Light tan */
+    background: #e8d9b5; 
 }
 
 .facts-heading h2::before {
@@ -161,8 +160,10 @@ section:hover {
 
 .fact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 .fact-card {
@@ -171,20 +172,45 @@ section:hover {
     font-family: "Gloria Hallelujah", cursive;
     font-size: 1rem;
     color: #5a4a42;
-    box-shadow: 0 2px 10px rgba(90, 74, 66, 0.1);
+    box-shadow: 0 3px 12px rgba(90, 74, 66, 0.15);
     transition: all 0.3s ease;
-    border: 1px solid #e8d9b5;
+    border: 2px solid #e8d9b5;
     min-height: 150px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;  
-    text-align: center;   
-    padding: 1.5rem;         
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.fact-card::before,
+.fact-card::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c4a86f;
+}
+
+.fact-card::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.fact-card::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
 }
 
 .fact-card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(90, 74, 66, 0.2);
+    border-color: #c4a86f;
 }
 
 .page-wrapper {
