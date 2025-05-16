@@ -119,6 +119,46 @@ section:hover {
     padding: 1rem;
 }
 
+.facts-heading {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 15px 30px; /* Increased padding for the box */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Makes the box fit the content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    border: 1px solid #e8d9b5; /* Light tan border */
+}
+
+.facts-heading h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #5a4a42; /* Dark brown to match your text */
+    font-size: 2.2rem;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    position: relative;
+}
+
+/* Keep your decorative elements */
+.facts-heading h2::before,
+.facts-heading h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #e8d9b5; /* Light tan */
+}
+
+.facts-heading h2::before {
+    left: -60px;
+}
+
+.facts-heading h2::after {
+    right: -60px;
+}
+
 .fact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
