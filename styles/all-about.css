@@ -9,7 +9,7 @@ body {
     background-attachment: scroll;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Gloria Hallelujah', cursive;
@@ -109,10 +109,10 @@ nav a:hover {
     overflow-wrap: normal;
     hyphens: none;
     display: flex;
-  justify-content: center;   
-  align-items: center;       
-  text-align: center;        
-  flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .flip-back {
@@ -135,10 +135,22 @@ nav a:hover {
     overflow-wrap: break-word;
     hyphens: auto;
     display: flex;
-  justify-content: center;   /* по горизонтали */
-  align-items: center;       /* по вертикали */
-  text-align: center;        /* выравнивание текста */
-  flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.page-wrapper>section {
+    flex: 1;
 }
 
 footer {
