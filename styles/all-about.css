@@ -1,23 +1,41 @@
 body {
-    font-family: "Gloria Hallelujah", cursive;
     margin: 0;
     padding: 0;
     background-color: #f4f7fa;
-    color: #14532d;
+    background-image: url("../assets/background_5653.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     line-height: 1.6;
     scroll-behavior: smooth;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px) brightness(0.7);
+    z-index: -1;
 }
 
 header,
 footer {
     border: none;
     background: linear-gradient(to right, #14532d, #3f9a4c, #d9f99d);
-    color: rgb(26, 60, 44);
     padding: 1.5em 2em;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 footer {
@@ -39,8 +57,8 @@ nav a {
     text-decoration: none;
     color: rgb(26, 60, 44);
     font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s ease, transform 0.3s ease;
-    text-shadow: 1px 1px 1px rgba(0, 1, -1, 0.815);
 }
 
 nav a:hover {
@@ -49,16 +67,41 @@ nav a:hover {
 }
 
 section {
-    background-color: ghostwhite;
-    padding: 2em;
-    margin: 2em auto;
-    max-width: 960px;
+    background-color: transparent;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
 }
 
 section:hover {
     transform: scale(1.01);
 }
 
+.dikdik-facts {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.2rem;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 1rem;
+    color: rgb(26, 60, 44);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: scale(1.02);
+}
