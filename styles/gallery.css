@@ -4,7 +4,6 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center top;
-
     display: flex;
     flex-direction: column;
     min-height: fit-content;
@@ -63,12 +62,6 @@
     box-shadow: 0 2px 6px rgba(1, 39, 7, 0.7);
 }
 
-.video-wrapper figcaption {
-    font-size: 0.9rem;
-    padding-top: 0.5rem;
-    text-align: center;
-}
-
 .left-column img,
 .right-column img {
     width: 100%;
@@ -85,20 +78,12 @@
     z-index: 1;
 }
 
-.left-column figcaption,
-.right-column figcaption {
-    font-size: 0.9rem;
-    padding-top: 0.5rem;
-}
-
 .left-column a,
 .right-column a,
 .video-wrapper a {
     text-decoration: none;
-    color: rgb(26, 60, 44);
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
-    text-shadow: 1px 1px 1px rgba(0, 1, 0, 0.815);
 }
 
 .left-column a:hover,
@@ -157,4 +142,5 @@ header {
     font-size: 1rem;
     color: #1a1a1a;
     text-shadow: none;
+    padding-top: 0.5rem;
 }
