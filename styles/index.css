@@ -1,0 +1,46 @@
+/* overrides */
+header {
+    border-bottom: 2px solid #edd32f;
+}
+
+nav a:hover {
+    color: #edd32f;
+}
+
+nav a::after {
+    background-color: #edd32f;
+}
+
+
+footer {
+    border-top: 2px solid #edd32f;
+}
+
+
+/* flexbox */
+#index-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.index-card {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 4rem;
+}
+
+.index-card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    width: 140px;
+}
+
+.index-card p {
+    margin: 0;
+    text-align: center;
+    flex: 3;
+    min-width: 250px;
+}
