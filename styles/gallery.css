@@ -88,3 +88,8 @@ footer p {
   font-size: 0.75rem;
   color: #ffffff92;
 }
+
+.main-nav a:hover {
+  font-weight: bold;
+  color: rgb(228, 82, 87);
+}
