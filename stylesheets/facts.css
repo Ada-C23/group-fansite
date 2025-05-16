@@ -8,6 +8,11 @@ body {
   background-repeat: repeat;
 }
 
+
+.bg-container {
+  min-height: calc(100vh - 50px); 
+}
+
 h1 {
   font-family: "Danfo", sans-serif;
   font-size: 80px;
@@ -51,4 +56,5 @@ article p {
 
 footer {
   background-color: white;
+  height: 50px;
 }
