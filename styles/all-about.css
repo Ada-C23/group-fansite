@@ -11,6 +11,9 @@ body {
     scroll-behavior: smooth;
     position: relative;
     z-index: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body::before {
@@ -142,4 +145,20 @@ section:hover {
 
 .fact-card:hover {
     transform: scale(1.02);
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper>section {
+    flex: 1;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
 }
