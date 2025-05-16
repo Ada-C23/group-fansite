@@ -28,6 +28,10 @@ main {
   padding: 1.5rem 1.5rem;
 }
 
+h2 {
+  display: none;
+}
+
 .flexbox {
   display: flex;
   flex-wrap: wrap;             
@@ -42,7 +46,7 @@ main {
   border-radius: 15px;              
 }
 
-article h2 {
+article h3 {
   font-family: 'Luckiest Guy';
   font-size: 2rem;
   color: #F06115;
