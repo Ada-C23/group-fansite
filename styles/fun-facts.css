@@ -8,7 +8,7 @@ body {
     background-blend-mode: screen;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Gloria Hallelujah', cursive;
@@ -145,10 +145,4 @@ nav a:hover {
     object-fit: contain;
     display: block;
     border-radius: 12px;
-}
-
-footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 1rem;
 }
