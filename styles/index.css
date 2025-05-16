@@ -2,6 +2,18 @@ h1 {color: #224461; font-style: bold; font-family: 'Fira Code', monospace;}
 h2 {color: #f9d143; font-style: italic; font-family: 'Inconsolata', monospace;}
 p {color: #ebebeb; background-color: #224461; font-family: 'Source Code Pro', monospace;}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 body {display: grid;
 grid-template-rows: auto 1fr;
 gap: 3rem;
@@ -10,12 +22,14 @@ font-family: 'Fira Code', monospace;
 background-color: whitesmoke;
 }
 
-header h1 {color: #224461; text-align: center; font-style: bold; font-size: 3.5rem; background-color:  #f9d143; padding: 3rem; margin-bottom: 2rem;}
+header h1 {color: #224461; text-align: center; font-style: bold; font-size: 3.5rem; background-color:  #f9d143; margin-bottom: 2rem; padding: 3rem}
 
 .main-nav {display: flex; justify-content: center; gap: 3rem; font-size: 1rem;}
 
 .joke-blocks {display: flex; gap: 1rem; justify-content: space-between; padding: 1rem; color: #ebebeb;}
 
-.joke {flex:1; background-color: #224461; color: #ebebeb; font-family: 'Source Code Pro', monospace; padding: 1rem; text-align: center; padding: 1.5rem;}
+.joke {flex:1; background-color: #224461; color: #ebebeb; font-family: 'Source Code Pro', monospace; padding: 1rem; text-align: center; padding: 1.5rem; border-radius: 30px;}
 
-.team {text-align: center; color: #f9d143; font-style: italic; font-family: 'Inconsolata', monospace;}
+.team {text-align: center; color: #f9d143; font-style: italic; font-family: 'Inconsolata', monospace; background-color: #ebebeb;}
+
+a {color: #224461; text-decoration: solid;}
