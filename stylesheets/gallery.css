@@ -4,7 +4,10 @@
 
 body {
     background-color :#94911C;
-    background-attachment: scroll;
+}
+
+h1 {
+    font-size: 70px;
 }
 .survived-nav2 {
     background-color:#94911C;
@@ -37,7 +40,7 @@ body {
 }
 .header-container {
     width: 100%;
-    height: 40%;
+    height: 20%;
     align-content: center;
     overflow: hidden;
     background: #EAD3C1;
