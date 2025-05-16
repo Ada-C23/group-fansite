@@ -113,7 +113,6 @@ nav a:hover {
     position: relative;
 }
 
-/* Keep your decorative elements */
 .facts-heading h2::before,
 .facts-heading h2::after {
     content: "";
@@ -206,16 +205,16 @@ nav a:hover {
     backface-visibility: hidden;
     border: 2px solid rgb(26, 60, 44);
     border-radius: 12px;
-    padding: 20px; /* Reduced from 1rem */
-    font-size: 0.85rem; /* Slightly smaller base size */
+    padding: 20px; 
+    font-size: 0.85rem; 
     line-height: 1.4;
     font-weight: bold;
     box-sizing: border-box;
     overflow: hidden;
-    overflow-y: auto; /* Allows scrolling when needed */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Changed from center */
+    justify-content: center; 
     align-items: center;
     text-align: center; 
 }
@@ -226,16 +225,16 @@ nav a:hover {
     margin: 0;
     width: 100%;
     max-height: 100%;
-    overflow: hidden; /* Prevents scrolling */
+    overflow: hidden; 
 }
 
 .fact-list li {
-    text-align: left; /* Keep bullets aligned left */
+    text-align: left; 
     padding-left: 1rem;
     margin-bottom: 0.5rem;
     position: relative;
-    font-size: 1rem; /* Slightly smaller */
-    line-height: 1.2; /* Tighter line spacing */
+    font-size: 1rem;
+    line-height: 1.2; 
 }
 
 .fact-list li:before {
