@@ -1,0 +1,86 @@
+/* Main Gallery specific styles */
+main div img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main div img:hover {
+    transform: scale(1.05);
+}
+
+main p {
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+    background-color: #fffaf0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    color: #8b0000;
+}
+
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+main > div > div {
+    max-width: 420px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dessert Callories Grid Section */
+.dessert-facts {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+.dessert-facts h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8b0000;
+}
+
+/* Grid Layout */
+.facts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Fact Card */
+.fact {
+    background-color: #fffaf0;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fact h3 {
+    margin-bottom: 10px;
+    color: #8b0000;
+    font-size: 1.2rem;
+}
+
+.fact p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4;
+}
