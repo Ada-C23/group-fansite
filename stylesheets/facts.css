@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Danfo&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
+body {
+  background: url('../assets/images/bg/index-bg-checkered.png');
+  background-size: 150px;
+  background-repeat: repeat;
+}
+
+
+.bg-container {
+  min-height: calc(100vh - 50px); 
+}
+
+h1 {
+  font-family: "Danfo";
+  font-size: 75px;
+  text-align: center;
+  background-color: white;
+}
+
+main {
+  max-width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem 1.5rem;
+}
+
+.flexbox h2 {
+  display: none;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;             
+  gap: 1.5rem;                   
+  justify-content: space-around;    
+}
+
+.flexbox article {
+  flex: 600px; 
+  background-color: #EAD3CA;  
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;              
+}
+
+article h3 {
+  font-family: 'Luckiest Guy';
+  font-size: 2rem;
+  color: #F06115;
+}
+
+article p {
+  font-family: 'Share Tech';
+  font-size: 1.5rem;
+  color: black;
+}
+
+footer {
+  background-color: white;
+  height: 50px;
+}
