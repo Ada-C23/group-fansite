@@ -97,7 +97,7 @@ section {
     object-fit: cover;
     object-position: center;
     max-height: 380px;
-    border: 10px solid white;
+    border: 10px solid rgb(252, 249, 244);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(90, 74, 66, 0.25);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
@@ -162,7 +162,7 @@ section:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0 1rem;
 }
 
