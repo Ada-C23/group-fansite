@@ -1,8 +1,8 @@
 /* Common styles for the whole page */
 body {
-    background-image: url("../assets/back.jpeg");
+    background-image: url("../assets/savanna-pattern.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center 150px;
     background-color: rgba(255, 255, 255, 0.345);
     background-blend-mode: screen;
@@ -15,6 +15,7 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     overflow-x: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 
 /* Sep.padding for content */
@@ -145,6 +146,7 @@ nav a:hover {
     height: 180px;
     perspective: 1000px;
     box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
 .flip-inner {
@@ -217,6 +219,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: transparent;
 }
 
 
