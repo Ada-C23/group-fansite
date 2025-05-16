@@ -9,6 +9,7 @@ body {
 h1 {
     font-size: 70px;
 }
+
 .survived-nav2 {
     background-color:#94911C;
     box-shadow: #F06115;
@@ -17,11 +18,13 @@ h1 {
     font-family: 'Rubik Puddles';
     text-transform: uppercase;
 }
+
 .title {
     font-family: 'Rubik Puddles';
     font-weight: 600;
     text-align: center;
     text-wrap: pretty;
+    font-size: 70px
     text-shadow:
     1px 1px 2px #94911C,
     0 0 1em #EAD3C1,
