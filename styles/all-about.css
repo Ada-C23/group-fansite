@@ -1,36 +1,30 @@
+/* Common styles for the whole page */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7fa;
-    background-image: url("../assets/savanna-pattern.jpg");
+    background-image: url("../assets/back.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-    position: relative;
-    z-index: 1;
-    height: 100%;
+    background-position: center 150px;
+    background-color: rgba(255, 255, 255, 0.345);
+    background-blend-mode: screen;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(6px) brightness(0.7);
-    z-index: -1;
+/* Sep.padding for content */
+main {
+    flex-grow: 1;
+    padding: 2cm;
+    box-sizing: border-box;
 }
 
+/* Header и Footer */
 header,
 footer {
     width: 100%;
@@ -41,186 +35,110 @@ footer {
     box-sizing: border-box;
 }
 
-footer {
-    font-size: 1.5em;
-    margin-top: 2em;
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
 }
 
+/* For Navigation */
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 3em;
     list-style: none;
     padding: 0;
-    margin-top: 1em;
-    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 1rem 0 0;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(26, 60, 44);
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
     color: #c4e272;
-    transform: scale(1.05);
 }
 
-section {
-    background-color: transparent;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-    z-index: 2;
-    position: relative;
-}
-
-.dikdik-banner {
-    width: 100%;
-    max-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px 0; 
-    background-color: #f5e9d2; 
-    position: relative;
-    overflow: hidden; 
-}
-
-.dikdik-banner img {
-    width: 90%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    max-height: 380px;
-    border: 10px solid white;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(90, 74, 66, 0.25);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-}
-
-.dikdik-banner img:hover {
-    transform: scale(1.01) rotate(0.5deg);
-    box-shadow: 0 8px 30px rgba(90, 74, 66, 0.4);
-    border-color: #cb9949;
-}
-
-section:hover {
-    transform: scale(1.01);
-}
-
-.dikdik-facts {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 1rem;
-}
-
-.facts-heading {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 1200px;
-    padding: 15px 30px; 
-    background-color: rgba(255, 255, 255, 0.9); 
-    border-radius: 8px; 
-    display: inline-block; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    border: 1px solid #e8d9b5; 
-}
-
-.facts-heading h2 {
-    font-family: 'Gloria Hallelujah', cursive;
-    color: #5a4a42; 
-    font-size: 2.2rem;
-    margin: 0;
-    padding: 0; 
-    position: relative;
-}
-
-.facts-heading h2::before,
-.facts-heading h2::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 2px;
-    background: #e8d9b5; 
-}
-
-.facts-heading h2::before {
-    left: -60px;
-}
-
-.facts-heading h2::after {
-    right: -60px;
-}
-
-.fact-grid {
+/* For Containers, cards */
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1cm;
+    box-sizing: border-box;
 }
 
-.fact-card {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    font-family: "Gloria Hallelujah", cursive;
-    font-size: 1rem;
-    color: #5a4a42;
-    box-shadow: 0 3px 12px rgba(90, 74, 66, 0.15);
-    transition: all 0.3s ease;
-    border: 2px solid #e8d9b5;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
+/* Cards */
+.flip-card {
+    width: 100%;
+    height: 180px;
+    perspective: 1000px;
+    box-sizing: border-box;
+}
+
+.flip-inner {
     position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
 
-.fact-card::before,
-.fact-card::after {
-    content: "";
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front {
+    background-color: #c863e944;
+    color: #310640da;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #c4a86f;
-}
-
-.fact-card::before {
-    top: 10px;
-    left: 10px;
-    border-right: none;
-    border-bottom: none;
-}
-
-.fact-card::after {
-    bottom: 10px;
-    right: 10px;
-    border-left: none;
-    border-top: none;
-}
-
-.fact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(90, 74, 66, 0.2);
-    border-color: #c4a86f;
-}
-
-.page-wrapper {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;        
+  flex-direction: column;  
 }
 
-.page-wrapper>section {
-    flex: 1;
+.flip-back {
+    background-color: #bfd67f8c;
+    color: rgb(26, 60, 44);
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: justify;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    display: flex;
+  justify-content: center;   /* по горизонтали */
+  align-items: center;       /* по вертикали */
+  text-align: center;        /* выравнивание текста */
+  flex-direction: column;  
 }
 
 footer {
