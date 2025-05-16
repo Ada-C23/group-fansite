@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Henny+Penny&family=Italiana&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Quicksand:wght@300..700&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap');
+
+/* ========== Root Variables ========== */
+:root {
+    --blueberry: #5C2E91;
+    --chocolate: #3B1F1F;
+    --slate: #292D37;
+}
+
+/* ========== Global Styles ========== */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 3fr 12%;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--chocolate);
+    line-height: 1.6;
+    background: linear-gradient(0deg, rgba(254, 255, 255, 0.538) 82%, rgba(255, 252, 246, 0.674) 100%), url("https://iili.io/3gHzRmx.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+/* ========== Header & Navigation ========== */
+header {
+    grid-row: 1;
+    background: linear-gradient(0deg, rgba(254, 255, 255, 0.467) 82%, rgba(255, 252, 246, 0.691) 100%), url('../assets/header-backgroung.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 1.5rem 6rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+h1 img {
+    width: 5rem;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+.nav-links li:hover {
+    transform: scale(1.05);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ac643b;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 0 0.5rem;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #8e5230;
+}
+
+/* ========== Typography ========== */
+.site-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+.cake {
+    color: #ac643b;
+}
+
+.verse {
+    color: #8e5230;
+}
+
+#main-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    font-family: 'Abril Fatface', cursive;
+    color: #8e5230;
+}
+
+/* ========== Main Content ========== */
+main {
+    grid-row: 2;
+    padding: 0 5rem;
+}
+
+/* ========== Footer ========== */
+footer {
+    grid-row: 3;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color: var(--slate);
+    line-height: 10px;
+}

@@ -1,0 +1,93 @@
+/* ========== Facts Cards ========== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* container with white background */
+.fun-fact {
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Changed to white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.first-fun-fact {
+    margin-top: 2rem;
+}
+
+.fun-fact h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Abril Fatface', cursive;
+    color: #8e5230;
+    
+}
+
+
+/* Grid layout for the fact items – 3 columns */
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Each individual fact card with soft pink background */
+.fact-item {
+    background-color: #fff5f8; /* Soft pink */
+    /* background-color: #fdfdfd; white */
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: -4px 0 0 0 #ffb6b6; /* Sharp pink shadow line */
+    /* box-shadow: -4px 0 0 0 #9fbebd;  */
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Optional image styling */
+.facts-img {
+    height: 20%;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 30px;
+    align-self: center;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .fact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fun-fact {
+        width: 95%;
+    }
+}
+
+a {
+    color: #ffb6b6; /* Peach color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #ff7f7f; /* Darker peach color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#quiz {
+    /* text-decoration: none; */
+    /* color: #ac643b; */
+    color: var(--blueberry);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 0 0.5rem;
+    font-family: 'Chicle', cursive;
+}

@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    background-image: url("https://iili.io/3gHzRmx.jpg");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.gallery-img {
+    width: 220px;
+    height: 220px;
+    background: rgb(255, 255, 253);
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) url('#sketch-border');
+}
+
+.gallery-img:hover {
+    filter: brightness(106%);
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80vw;
+    background-position: center;
+    padding: 3rem;
+    overflow: visible;
+}
+
+.gallery-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-width: 1200px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    box-shadow: -4px 0 0 0 #ffb6b6;
+}
+
+.gallery-title2 {
+    padding: 2rem;
+    font-family: 'Italiana', sans-serif;
+}
+
+.gallery-title2:hover {
+    color: rgb(214, 169, 4);
+}
+
+.gallery-title3 {
+    text-align: center;
+    font-family: 'Italiana', sans-serif;
+    font-size: large;
+    color: rgb(106, 4, 109);
+}
+
+.gallery-title3:hover {
+    color: blueviolet;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
