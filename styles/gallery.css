@@ -100,12 +100,20 @@ header {
 }
 
 .header-note {
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
-    background: rgba(203, 153, 73, 0.2);
-    font-style: italic;
-    margin-top: -1rem; 
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.25rem 0.75rem;
+    border: 1px dashed #1a3c2c;
+    background-color: transparent;
+    color: #c4e272;
+    border-radius: 5px;
+    text-align: left;
+    z-index: 10;
+    max-width: 220px;
+    line-height: 1.2;
 }
 
 @media (max-width: 768px) {
