@@ -1,0 +1,279 @@
+/* Common styles for the whole page */
+body {
+    background-image: url("../assets/savanna-pattern.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center 150px;
+    background-color: rgba(255, 255, 255, 0.345);
+    background-blend-mode: screen;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Sep.padding for content */
+main {
+    flex-grow: 1;
+    padding: 2cm;
+    box-sizing: border-box;
+}
+
+/* Header и Footer */
+header,
+footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #4e0482;
+    color: rgb(26, 60, 44);
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+/* For Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 1rem 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(26, 60, 44);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c4e272;
+}
+
+.dikdik-banner {
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0; 
+    background-color: #f5e9d2; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.dikdik-banner img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    max-height: 380px;
+    border: 10px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(90, 74, 66, 0.25);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.dikdik-banner img:hover {
+    transform: scale(1.01) rotate(0.5deg);
+    box-shadow: 0 8px 30px rgba(90, 74, 66, 0.4);
+    border-color: #cb9949;
+}
+
+.facts-heading {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 15px 30px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    display: inline-block; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border: 1px solid #e8d9b5; 
+}
+
+.facts-heading h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #5a4a42; 
+    font-size: 2.2rem;
+    margin: 0; 
+    padding: 0;
+    position: relative;
+}
+
+.facts-heading h2::before,
+.facts-heading h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #e8d9b5; 
+}
+
+.facts-heading h2::before {
+    left: -60px;
+}
+
+.facts-heading h2::after {
+    right: -60px;
+}
+
+/* For Containers, cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1cm;
+    box-sizing: border-box;
+}
+
+/* Cards */
+.flip-card {
+    width: 100%;
+    height: 240px; 
+    perspective: 1000px;
+    margin: 0 auto; 
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front {
+    background-color: #EDDEBD;
+    color: #5a4a42;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.flip-front p {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flip-back {
+    background-color: rgba(191, 214, 127, 0.9);
+    color: rgb(26, 60, 44);
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid rgb(26, 60, 44);
+    border-radius: 12px;
+    padding: 20px; 
+    font-size: 0.85rem; 
+    line-height: 1.4;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+.fact-list {
+    text-align: center;
+    padding-left: 1rem;
+    margin: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden; 
+}
+
+.fact-list li {
+    text-align: left; 
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2; 
+}
+
+.fact-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #5a4a42;
+    font-weight: bold;
+}
+
+.sub-list {
+    padding-left: 0.5rem;
+    margin: 0.2rem 0;
+}
+
+.sub-list li {
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.sub-list li:before {
+    content: "◦";
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+
+.page-wrapper>section {
+    flex: 1;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+}
