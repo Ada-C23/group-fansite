@@ -1,47 +1,36 @@
-/* Header container */
-header#evyy {
+header {
     background-color: #ffecf3;
     border-bottom: 3px solid #ffc0cb;
     padding: 10px 0 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header-content {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-/* Logo styling - placed in first column */
 #logo {
     display: block;
     box-shadow: none;
     transition: transform 0.3s ease;
     width: 200px;
     height: auto;
-    margin: 0;
-    grid-column: 1;
+    margin: 0 0 20px 0;
 }
 
 #logo:hover {
     transform: scale(1.05);
 }
 
-/* Navigation container */
-header#evyy nav.navigation {
+nav {
     margin: 0;
     padding: 0;
-    grid-column: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-/* Navigation list */
-.main-nav {
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -51,12 +40,11 @@ header#evyy nav.navigation {
     width: 100%;
 }
 
-.main-nav li {
+nav li {
     margin: 0 15px;
 }
 
-/* Navigation links */
-header#evyy nav.navigation a {
+nav a {
     background-color: transparent;
     border: 2px solid #ffc0cb;
     border-radius: 30px;
@@ -68,66 +56,36 @@ header#evyy nav.navigation a {
     display: inline-block;
 }
 
-header#evyy nav.navigation a:hover {
+nav a:hover {
     background-color: #ffc0cb;
     color: white;
     transform: translateY(-3px);
     border-color: #ffc0cb;
 }
 
+nav a[aria-current="page"] {
+    background-color: #ffc0cb;
+    color: white;
+}
 
-/* Responsive adjustments */
 @media screen and (max-width: 900px) {
-    .header-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        gap: 20px;
-    }
-    
-    #logo {
-        grid-column: 1;
-        grid-row: 1;
-        justify-self: center;
-    }
-    
-    header#evyy nav.navigation {
-        grid-column: 1;
-        grid-row: 2;
-        width: 100%;
-        justify-content: center;
-    }       
-    }
-    
-    .contact-container {
-        grid-column: 1;
-        grid-row: 3;
-        justify-self: center;
-    }
-    
-    .main-nav {
+    nav ul {
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-        }
+    }
     
-    .main-nav li {
+    nav li {
         margin: 5px 10px;
         text-align: center;
-
     }
+}
 
-/* White background for home page */
-    body.home-page {
-        background-color: #ffffff;
-    }
-    
-/* White background for footer on home page */
-    .home-page footer {
-        background-color: #ffffff !important;
-    }
+body.home-page {
+    background-color: #ffffff;
+}
 
-
-.quote {
+blockquote.quote {
     max-width: 900px;
     margin: 30px auto 50px;
     font-size: 1.7rem;
@@ -139,7 +97,7 @@ header#evyy nav.navigation a:hover {
     font-style: normal;
 }
 
-.founding-story {
+article p.founding-story {
     max-width: 900px;
     margin: 30px auto 50px;
     font-size: 1.2rem;
@@ -149,8 +107,7 @@ header#evyy nav.navigation a:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-
-.special-title{
+.special-title {
     text-align: center;
     color: #5a3825;  
     font-family: "Cabin Sketch", sans-serif;
@@ -191,7 +148,7 @@ header#evyy nav.navigation a:hover {
     transform: scale(1.05);
 }
 
-.photo-caption {
+figcaption.photo-caption {
     font-style: italic;
     color: #777;
     text-align: center;
@@ -199,7 +156,7 @@ header#evyy nav.navigation a:hover {
     font-size: 16px;
 }
 
-.cafe-gif {
+figure .cafe-gif {
     border: none;
     box-shadow: none;
     border-radius: 0;
@@ -216,7 +173,7 @@ header#evyy nav.navigation a:hover {
     max-width: 1000px;
 }
 
-.location, .hours {
+article.location, article.hours {
     border-bottom: 4px solid #ffc0cb;
     padding: 25px 15px;
     text-align: center;
@@ -233,42 +190,57 @@ header#evyy nav.navigation a:hover {
     position: relative;
 }
 
-.location h3, .hours h3, .location h4, .hours h4 {
+article.location h3, article.hours h3, article.location h4, article.hours h4 {
     color: #8b0000;
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
     margin: 0 0 10px 0;
 }
 
-.location p, .hours p {
+article.location p, article.hours p {
     font-size: 1.1rem;
     line-height: 1.4;
+    margin: 0 0 5px 0;
 }
 
+footer {
+    background-color: #ffecf3;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+    border-top: 3px solid #ffc0cb;
+}
 
-
-/* Newsletter subscription section */
-.subscribe-section {
+section.subscribe-section {
     background-color: #fff9fb;
-    padding: 40px 20px;
-    margin: 50px auto 0;
-    max-width: 1000px;
+    padding: 30px 20px;
+    margin: 0 auto 30px;
+    max-width: 800px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-bottom: 4px solid #ffc0cb;
 }
 
-.subscribe-section h3 {
+section.subscribe-section h3 {
     color: #8b0000;
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+section.subscribe-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subscribe-form {
     display: flex;
-    max-width: 750px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -300,12 +272,16 @@ header#evyy nav.navigation a:hover {
     border-color: #ff6b81;
 }
 
-/* Social Media Icons */
+section.social-section {
+    margin: 30px auto;
+    text-align: center;
+}
+
 .social-media {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 40px auto 20px;
+    margin: 0 auto 30px;
 }
 
 .social-icon {
@@ -333,9 +309,42 @@ header#evyy nav.navigation a:hover {
     text-decoration: none;
 }
 
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+}
 
-/* Media query for mobile devices */
+.home-page footer {
+    background-color: #ffecf3;
+}
+
 @media screen and (max-width: 768px) {
+    .photo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo-box {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article.location, article.hours {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        height: auto;
+        padding: 25px 15px;
+    }
+    
     .subscribe-form {
         flex-direction: column;
         width: 90%;
@@ -349,13 +358,9 @@ header#evyy nav.navigation a:hover {
     .subscribe-form button {
         border-radius: 30px;
         width: 100%;
-        background-color: #ffc0cb;
     }
 }
 
-
-
-/* Add accessibility helper class */
 .visually-hidden {
     position: absolute;
     width: 1px;

@@ -12,94 +12,106 @@
     <link href="style/index.css" rel="stylesheet">
 </head>
 <body class="home-page">
-    <header id="evyy">
-        <div class="header-content">
-            <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo">
-            
-            <nav class="navigation">
-                <ul class="main-nav"> 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about_us.html" id="about">About Us</a></li>
-                    <li><a href="pages/our_desserts.html" id="facts">Our Desserts</a></li> 
-                    <li><a href="pages/diy.html" id="recipes">DIY</a></li>
-                    <li><a href="pages/gallery.html" id="gallery">Gallery</a></li> 
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <img id="logo" src="images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo">
+        
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="pages/about_us.html">About Us</a></li>
+                <li><a href="pages/our_desserts.html">Our Desserts</a></li> 
+                <li><a href="pages/diy.html">DIY</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li> 
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <div class="quote">
-            "A party without cake is just a meeting."
-            — Julia Child
-        </div>
-        <div class="photo-container">
-            <div class="photo-box">
-                <img class="cafe-image" alt="Evyy Cafe outdoor seating area with pastel pink tables and chairs under cream-colored umbrellas" src="images/eevy-patio.png" width="450" height="300">
-            </div>
-            <div class="photo-box">
-                <img class="cafe-image" alt="Four bakers in white aprons and chef hats preparing desserts together in the kitchen" src="images/bakingcrew.webp" width="450" height="300">
-            </div>
-        </div>
-        <p class="photo-caption">A glimpse into the Evyy Cafe experience!</p>
-        
-        <p class="founding-story">
-            Evyy Café was founded in 2025 by four passionate friends: Ellie, Viktoriya, Yasiel, and Yekaterina, whose initials inspired the café's name. What began as casual baking sessions in Ellie's kitchen blossomed into a shared dream of creating a space where their love for global desserts could be shared with the community. Each founder brings their unique cultural heritage to the menu, resulting in a delightful fusion of flavors from around the world. Today, Evyy Café stands as a testament to friendship, creativity, and the universal language of sweetness that brings people together.
-        </p>
+        <section aria-labelledby="welcome-quote">
+            <blockquote class="quote" id="welcome-quote">
+                "A party without cake is just a meeting."
+                — Julia Child
+            </blockquote>
+            
+            <figure>
+                <div class="photo-container">
+                    <div class="photo-box">
+                        <img class="cafe-image" alt="Evyy Cafe outdoor seating area with pastel pink tables and chairs under cream-colored umbrellas" src="images/eevy-patio.png" width="450" height="300" loading="lazy">
+                    </div>
+                    <div class="photo-box">
+                        <img class="cafe-image" alt="Four bakers in white aprons and chef hats preparing desserts together in the kitchen" src="images/bakingcrew.webp" width="450" height="300" loading="lazy">
+                    </div>
+                </div>
+                <figcaption class="photo-caption">A glimpse into the Evyy Cafe experience!</figcaption>
+            </figure>
+            
+            <article>
+                <p class="founding-story">
+                    Evyy Café was founded in 2025 by four passionate friends: Ellie, Viktoriya, Yasiel, and Yekaterina, whose initials inspired the café's name. What began as casual baking sessions in Ellie's kitchen blossomed into a shared dream of creating a space where their love for global desserts could be shared with the community. Each founder brings their unique cultural heritage to the menu, resulting in a delightful fusion of flavors from around the world. Today, Evyy Café stands as a testament to friendship, creativity, and the universal language of sweetness that brings people together.
+                </p>
+            </article>
 
-        <div class="gif-container">
-            <img src="https://media.tenor.com/naYMunSvaa8AAAAj/eating-cake.gif" alt="Animation of a cartoon character happily eating cake" class="cafe-gif">
-        </div>
+            <figure class="gif-container">
+                <img src="https://media.tenor.com/naYMunSvaa8AAAAj/eating-cake.gif" alt="Animation of a cartoon character happily eating cake" class="cafe-gif">
+            </figure>
+        </section>
+
+        <section class="thur-special" aria-labelledby="special-heading">
+            <h2 id="special-heading" class="special-title">
+                Thursday Special
+            </h2>
+            <p class="special-offer">
+                Enjoy our signature Puffcake, served with a complimentary <strong>ADA PSE solution</strong> — because Thursdays deserve a little extra!
+            </p>
+        </section>
+
+        <section aria-labelledby="info-heading">
+            <h2 id="info-heading" class="visually-hidden">Cafe Information</h2>
+            
+            <div class="info-container">
+                <article class="location">
+                    <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Location</h3>
+                    <p>Ada Developers Academy</p>
+                    <p>PO Box 944</p>
+                    <p>Issaquah, WA 98027</p>
+                </article>
+                
+                <article class="hours">
+                    <h3><i class="far fa-clock" aria-hidden="true"></i> Our Hours</h3>
+                    <p>Open every day</p>
+                    <p>8am to 2pm</p>
+                </article>
+            </div>
+        </section>
     </main>
     
-    <div class="thur-special">
-        <h2 class="special-title">
-            Thursday Special
-        </h2>
-        <p class="special-offer">
-            Enjoy our signature Puffcake, served with a complimentary <strong>ADA PSE solution</strong> — because Thursdays deserve a little extra!
-        </p>
-    </div>
+    <footer aria-label="Site Footer">
+        <section class="subscribe-section" aria-labelledby="newsletter-heading">
+            <h3 id="newsletter-heading">Subscribe to Our Newsletter</h3>
+            <p>Get updates on new recipes and cafe news delivered straight to your inbox.</p>
+            <form class="subscribe-form">
+                <label for="email-subscription" class="visually-hidden">Email Address</label>
+                <input type="email" id="email-subscription" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
 
-    <div class="info-container">
-        <div class="location">
-            <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-            <p>Ada Developers Academy<br>
-                PO Box 944<br>
-                Issaquah, WA 98027
-            </p>
-        </div>
-        <div class="hours">
-            <h3><i class="far fa-clock"></i> Our Hours</h3>
-            <p>Open every day<br>
-                8am to 2pm
-            </p>
-        </div>
-    </div>
-    
-    <div class="subscribe-section">
-        <h3>Subscribe to Our Newsletter</h3>
-        <form class="subscribe-form">
-            <label for="email-subscription" class="visually-hidden">Email Address</label>
-            <input type="email" id="email-subscription" placeholder="Enter your email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-
-    <div class="social-media">
-        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Follow us on Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Follow us on Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Follow us on Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-    </div>
-    
-    <footer id="copyright">
-        <p>&copy; 2025 Dessert Fans</p>
+        <section class="social-section" aria-labelledby="social-heading">
+            <h3 id="social-heading" class="visually-hidden">Follow Us</h3>
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+        
+        <p class="copyright">&copy; 2025 Evyy Cafe. All rights reserved.</p>
     </footer>
 </body>
 </html>

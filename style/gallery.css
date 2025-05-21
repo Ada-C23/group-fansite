@@ -1,86 +1,107 @@
-/* Main Gallery specific styles */
-main div img {
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-main div img:hover {
-    transform: scale(1.05);
-}
-
-main p {
-    padding: 10px;
-    font-size: 1rem;
-    line-height: 1.4;
-    background-color: #fffaf0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    color: #8b0000;
-}
-
-main > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-main > div > div {
-    max-width: 420px;
+article.gallery-item {
     background-color: white;
-    padding: 15px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-main > div > div:hover {
+article.gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Dessert Callories Grid Section */
-.dessert-facts {
+article.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+article.gallery-item p {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+article.gallery-item strong {
+    color: #8b0000;
+    font-weight: 600;
+}
+
+section.dessert-facts {
     max-width: 1200px;
     margin: 60px auto;
     padding: 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.dessert-facts h2 {
-    font-size: 2rem;
+section.dessert-facts h2 {
     margin-bottom: 30px;
     color: #8b0000;
 }
 
-/* Grid Layout */
 .facts-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-/* Individual Fact Card */
-.fact {
+article.fact {
     background-color: #fffaf0;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fact h3 {
+article.fact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+article.fact h3 {
     margin-bottom: 10px;
     color: #8b0000;
     font-size: 1.2rem;
 }
 
-.fact p {
+article.fact p {
     color: #333;
     font-size: 1rem;
     line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#gallery-title, #calories-title {
+    text-align: center;
+    color: #8b0000;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
 }

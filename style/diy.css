@@ -1,4 +1,3 @@
-/* Recipe Card Layout */
 .recipe-cards {
   display: flex;
   flex-wrap: wrap;
@@ -7,8 +6,7 @@
   margin: 40px 0;
 }
 
-/* Recipe Card Styling */
-.recipe-card {
+article.recipe-card {
   width: 40%;
   min-width: 280px;
   background-color: #fff9fb;
@@ -22,12 +20,12 @@
   margin-bottom: 20px;
 }
 
-.recipe-card:hover {
+article.recipe-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.recipe-card img {
+article.recipe-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -35,7 +33,7 @@
   margin-bottom: 25px;
 }
 
-.recipe-card h3 {
+article.recipe-card h3 {
   margin: 0 0 15px 0;
   color: #8b0000;
   font-family: 'Playfair Display', serif;
@@ -43,14 +41,13 @@
   text-align: center;
 }
 
-.recipe-card p {
+article.recipe-card p {
   font-size: 1.1rem; 
   line-height: 1.5;
   margin: 15px 0;
   flex-grow: 1;
 }
 
-/* Difficulty Indicators */
 .difficulty {
   display: flex;
   align-items: center;
@@ -74,7 +71,6 @@
   color: #8b0000;
 }
 
-/* Recipe Times */
 .recipe-times {
   display: flex;
   justify-content: space-around;
@@ -126,7 +122,6 @@
   color: white;
 }
 
-/* Hero Image */
 .hero-image {
   text-align: center;
   margin: 40px 0;
@@ -138,8 +133,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* User Gallery Section */
-.user-gallery {
+section.user-gallery {
   background-color: #fff9fb;
   padding: 35px;
   border-radius: 15px;
@@ -147,12 +141,12 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.user-gallery h3 {
+section.user-gallery h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.user-gallery > p {
+section.user-gallery > p {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
@@ -165,7 +159,7 @@
   margin: 35px 0;
 }
 
-.user-creation {
+article.user-creation {
   width: 300px;
   border-radius: 15px;
   overflow: hidden;
@@ -174,11 +168,11 @@
   transition: transform 0.3s;
 }
 
-.user-creation:hover {
+article.user-creation:hover {
   transform: translateY(-5px);
 }
 
-.user-creation img {
+article.user-creation img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -201,7 +195,6 @@
   color: #555;
 }
 
-/* Submit Creation Form */
 .submit-creation {
   background-color: #ffecf3;
   padding: 30px;
@@ -264,14 +257,13 @@
   background-color: #ff6b81;
 }
 
-/* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
-  .recipe-card {
+  article.recipe-card {
     width: 100%;
     max-width: 500px;
   }
   
-  .user-creation {
+  article.user-creation {
     width: 100%;
     max-width: 350px;
   }

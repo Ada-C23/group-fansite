@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Desserts - Evyy Cafe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="stylesheet" href="../style/index.css">
-  <link rel="stylesheet" href="../style/our_desserts.css"> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/our_desserts.css" />
 </head>
 <body>
-  <header id="evyy">
-    <div class="header-content">
-      <img id="logo" src="../images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo">
-      <nav class="navigation"> 
-        <ul class="main-nav"> 
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about_us.html" id="about">About Us</a></li>
-          <li><a href="our_desserts.html" id="facts">Our Desserts</a></li> 
-          <li><a href="diy.html" id="recipes">DIY</a></li>
-          <li><a href="gallery.html" id="gallery">Gallery</a></li> 
-        </ul> 
-      </nav>
-    </div>
+  <header>
+    <img
+      id="logo"
+      src="../images/evyycafelogo.png"
+      alt="Evyy Cafe Logo - A pastel pink cafe logo"
+    />
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="our_desserts.html" aria-current="page">Our Desserts</a></li>
+        <li><a href="diy.html">DIY</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <main>
     <h2>Global Recipe Facts</h2>
 
-    <section class="dessert-section">
-      <h3>Devil's Food Cake (USA) 🌎</h3>
-      <p>With its devilishly dark color and ultra-moist crumb, this American classic is a chocoholic’s dream.</p>
-      <p><strong>Did you know?</strong> The name "Devil’s Food" became popular in the early 1900s as a bold, rebellious alternative to light "Angel Food" cake.</p>
-      <a href="diy.html#devils-food-cake" class="recipe-button">🍰 Try the Recipe</a>
+    <section class="dessert-section" aria-labelledby="devils-food-title">
+      <h3 id="devils-food-title">Devil's Food Cake (USA) 🌎</h3>
+      <p>
+        With its devilishly dark color and ultra-moist crumb, this American classic is a chocoholic's dream.
+      </p>
+      <p>
+        <strong>Did you know?</strong> The name "Devil's Food" became popular in the early 1900s as a bold, rebellious alternative to light "Angel Food" cake.
+      </p>
+      <a href="diy.html#devils-food-cake" class="recipe-button" aria-label="Try the recipe for Devil's Food Cake">
+        🍰 Try the Recipe
+      </a>
     </section>
 
-    <section class="dessert-section">
-      <h3>Tres Leches Cake (Latin America) 🌎</h3>
-      <p>A beloved sponge cake soaked in three kinds of milk, making it creamy and rich with every bite.</p>
-      <p><strong>Fun Fact:</strong> This cake's recipe became widespread thanks to a canned milk campaign in Latin America by Nestlé during the mid-20th century.</p>
-      <a href="diy.html#tres-leches" class="recipe-button">🍰 Try the Recipe</a>
+    <section class="dessert-section" aria-labelledby="tres-leches-title">
+      <h3 id="tres-leches-title">Tres Leches Cake (Latin America) 🌎</h3>
+      <p>
+        A beloved sponge cake soaked in three kinds of milk, making it creamy and rich with every bite.
+      </p>
+      <p>
+        <strong>Fun Fact:</strong> This cake's recipe became widespread thanks to a canned milk campaign in Latin America by Nestlé during the mid-20th century.
+      </p>
+      <a href="diy.html#tres-leches" class="recipe-button" aria-label="Try the recipe for Tres Leches Cake">
+        🍰 Try the Recipe
+      </a>
     </section>
 
-    <section class="dessert-section">
-      <h3>Cușma lui Guguță (Moldova) 🌎</h3>
-      <p>A playful dessert of cherry-filled crepes stacked like a hat, named after a popular Moldovan storybook character.</p>
-      <p><strong>Did you know?</strong> This dessert is named after Guguță — a boy whose magical hat grows as he offers warmth to others, making it a symbol of generosity and folklore.</p>
-      <a href="diy.html#cusma-guguta" class="recipe-button">🍰 Try the Recipe</a>
+    <section class="dessert-section" aria-labelledby="cusma-guguta-title">
+      <h3 id="cusma-guguta-title">Cușma lui Guguță (Moldova) 🌎</h3>
+      <p>
+        A playful dessert of cherry-filled crepes stacked like a hat, named after a popular Moldovan storybook character.
+      </p>
+      <p>
+        <strong>Did you know?</strong> This dessert is named after Guguță — a boy whose magical hat grows as he offers warmth to others, making it a symbol of generosity and folklore.
+      </p>
+      <a href="diy.html#woodpile-cake" class="recipe-button" aria-label="Try the recipe for Cușma lui Guguță">
+        🍰 Try the Recipe
+      </a>
     </section>
 
-    <section class="dessert-section">
-      <h3>Napoleon Cake (Eurasia) 🌎</h3>
-      <p>A multi-layered cake with puff pastry and custard, this treat is a staple of Eurasia holidays and celebrations.</p>
-      <p><strong>Fun Fact:</strong> Created in 1912 to honor the victory over Napoleon, each delicate layer represents the strength and endurance of tradition.</p>
-      <a href="diy.html#napoleon-cake" class="recipe-button">🍰 Try the Recipe</a>
+    <section class="dessert-section" aria-labelledby="napoleon-cake-title">
+      <h3 id="napoleon-cake-title">Napoleon Cake (Eurasia) 🌎</h3>
+      <p>
+        A multi-layered cake with puff pastry and custard, this treat is a staple of Eurasia holidays and celebrations.
+      </p>
+      <p>
+        <strong>Fun Fact:</strong> Created in 1912 to honor the victory over Napoleon, each delicate layer represents the strength and endurance of tradition.
+      </p>
+      <a href="diy.html#napoleon-cake" class="recipe-button" aria-label="Try the recipe for Napoleon Cake">
+        🍰 Try the Recipe
+      </a>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Dessert Fans</p>
+  <footer aria-label="Site Footer">
+    <p>&copy; 2025 Evyy Cafe. All rights reserved.</p>
   </footer>
 </body>
 </html>

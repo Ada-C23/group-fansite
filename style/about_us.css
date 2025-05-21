@@ -1,18 +1,15 @@
-/* About Us page styles */
-
-/* Unified container */
-.about-container {
+main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px 50px;
 }
 
-/* Title and text */
-.header-2 {
+h2 {
   color: #8b0000;
   text-align: center;
   margin: 40px 0 20px;
   font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .text {
@@ -20,65 +17,73 @@
   margin: 0 auto 30px;
   text-align: center;
   line-height: 1.7;
-  font-size: 1rem; 
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
 }
 
-
-
-/* Baker cards container */
 .baker-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
-/* Individual baker cards */
-.baker-card {
+article.baker-card {
   width: 45%;
-  min-width: 400px;
-  padding: 10px;
+  min-width: 350px;
+  padding: 20px 15px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
 }
 
-.baker-card:hover {
+article.baker-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .baker-photo {
-  width: 270px; 
-  height: 270px; 
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   margin-bottom: 30px;
-  border: 3px solid white; 
+  border: 3px solid white;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
 }
 
 .baker-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 40%; 
-    transform: translateY(-19px);
-    display: block; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transform: translateY(-19px);
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.baker-card h3 {
+article.baker-card:hover .baker-photo img {
+  transform: translateY(-24px) scale(1.05);
+}
+
+article.baker-card h3 {
   color: #8b0000;
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   margin: 0 0 8px;
 }
 
-.baker-card h4 {
+article.baker-card h4 {
   color: #8b4513;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
@@ -86,8 +91,8 @@
   margin: 0 0 20px;
 }
 
-.baker-card p {
-  font-size: 1rem; 
+article.baker-card p {
+  font-size: 1rem;
   line-height: 1.5;
   color: #555;
   margin-bottom: 25px;
@@ -95,7 +100,6 @@
   max-width: 90%;
 }
 
-/* Contact icons */
 .baker-contact {
   display: flex;
   gap: 25px;
@@ -119,24 +123,25 @@
 .baker-contact a:hover {
   background-color: #ff6b81;
   transform: scale(1.1);
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
-
-/* Media Query for smaller screens */
 @media screen and (max-width: 900px) {
-  .baker-card {
+  article.baker-card {
     width: 100%;
     min-width: 0;
     max-width: 500px;
+    padding: 15px 10px 25px;
   }
-  
-  #cakes {
-    margin-bottom: 30px;
+
+  .text,
+  article.baker-card p {
+    font-size: 1.2rem;
   }
-  
-  .text, .baker-card p {
-    font-size: 1.4rem; /* Slightly smaller on mobile for better readability */
+
+  .baker-photo {
+    width: 220px;
+    height: 220px;
   }
 }
