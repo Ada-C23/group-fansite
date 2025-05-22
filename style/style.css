@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.2);
+    font-family: 'Comic Neue', 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem; 
+    line-height: 1.5;
+}
+
+header {
+    background-color: #ffecf3;
+    border-bottom: 3px solid #ffc0cb;
+    padding: 10px 0 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    display: block;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    background-color: transparent; 
+    padding: 10px 20px 20px;
+    margin: 10px auto 0;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav li {
+    margin: 0 15px; 
+}
+
+nav a {
+    background-color: transparent;
+    border: 2px solid #ffc0cb;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+    font-size: 18px;
+    text-decoration: none;
+    color: #8b0000;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ffc0cb;
+    color: white;
+    transform: translateY(-3px);
+    border-color: #ffc0cb;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    color: #8b0000;
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #8b4513;
+    margin: 25px 0 10px;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: #8b4513;
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+}
+
+section, article {
+    margin: 30px 0;
+}
+
+section {
+    background-color: transparent; 
+    padding: 0; 
+    border-radius: 0;
+    box-shadow: none; 
+}
+
+div {
+    margin: 20px 0;
+}
+
+a {
+    color: #8b0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6b81;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #fff0f5;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.location, .hours {
+    background-color: #fffaf0;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+    font-size: 14px; 
+    color: #777; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+    
+    header nav a {
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.quote {
+    max-width: 900px;
+    margin: 30px auto 50px;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: #5a3825;
+    text-align: center;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.home-page {
+    background-color: #ffffff;
+}
+
+.home-page footer {
+    background-color: #ffffff !important;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Evyy Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/about_us.css" />
+</head>
+<body>
+  <header>
+    <img id="logo" src="../images/evyycafelogo.png" alt="Evyy Cafe Logo - A pastel pink cafe logo" />
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about_us.html" aria-current="page">About Us</a></li>
+        <li><a href="our_desserts.html">Our Desserts</a></li>
+        <li><a href="diy.html">DIY</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="about-us">
+      <h2 id="about-us" class="header-2">About the Founders and Bakers</h2>
+      <p class="text">
+        <strong>Evyy Café</strong> is the heartwarming creation of four passionate friends:
+        <strong>Ellie</strong>, <strong>Viktoriya</strong>, <strong>Yasiel</strong>, and <strong>Yekaterina</strong>.
+        Each brings a unique soul to the space—Yasiel, the dreamer with a flair for vintage aesthetics;
+        Ellie, the storyteller whose warmth shapes every cozy corner;
+        Yekaterina, a culinary artist inspired by her Eastern European roots; and
+        Victoria, the strategist with a love for community and culture.
+        Together, they've crafted more than just a retro café—they've created a sanctuary where nostalgia, flavor, and friendship meet.
+      </p>
+
+      <div class="baker-card-container">
+        <article class="baker-card">
+          <div class="baker-photo">
+            <img src="../images/ellieheadshot.webp" alt="Ellie - Co-founder and Head Baker" loading="lazy" />
+          </div>
+          <h3>Ellie</h3>
+          <h4>Co-founder & Head Baker</h4>
+          <p>
+            With a background in French pastry, Ellie brings precision and artistry to every creation.
+            Her Devil's Food Cake has won local baking contests three years running.
+            When not in the kitchen, she's exploring new flavor combinations inspired by her travels.
+          </p>
+          <div class="baker-contact">
+            <a href="mailto:ellie@evyycafe.com" aria-label="Email Ellie"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+12065551234" aria-label="Call Ellie"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="baker-card">
+          <div class="baker-photo">
+            <img src="../images/viktoriyaheadshot.webp" alt="Viktoriya - Co-founder and Pastry Specialist" loading="lazy" />
+          </div>
+          <h3>Viktoriya</h3>
+          <h4>Co-founder & Pastry Specialist</h4>
+          <p>
+            Viktoriya's Central Asian heritage infuses our menu with unique flavors and techniques.
+            Her signature Napoleon Cake represents her philosophy of blending tradition with innovation.
+            She's passionate about teaching others the joy of layered pastries.
+          </p>
+          <div class="baker-contact">
+            <a href="mailto:viktoriya@evyycafe.com" aria-label="Email Viktoriya"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+12065552345" aria-label="Call Viktoriya"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="baker-card">
+          <div class="baker-photo">
+            <img src="../images/yasiheadshot.webp" alt="Yasiel - Co-founder and Flavor Designer" loading="lazy" />
+          </div>
+          <h3>Yasiel</h3>
+          <h4>Co-founder & Flavor Designer</h4>
+          <p>
+            Yasiel's Latin American roots shine through in our most vibrant desserts.
+            His Tres Leches cake is legendary for its perfect balance of sweetness and texture.
+            He's constantly experimenting with tropical fruits and spices to create new café favorites.
+          </p>
+          <div class="baker-contact">
+            <a href="mailto:yasiel@evyycafe.com" aria-label="Email Yasiel"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+12065553456" aria-label="Call Yasiel"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="baker-card">
+          <div class="baker-photo">
+            <img src="../images/yekanotheadshot.webp" alt="Yekaterina - Co-founder and Creative Director" loading="lazy" />
+          </div>
+          <h3>Yekaterina</h3>
+          <h4>Co-founder & Creative Director</h4>
+          <p>
+            With Moldovan heritage and an artist's eye, Yekaterina designs the visual elements of our desserts.
+            Her Woodpile Cake showcases her talent for turning simple ingredients into edible masterpieces.
+            She leads our cake decoration workshops on weekends.
+          </p>
+          <div class="baker-contact">
+            <a href="mailto:yekaterina@evyycafe.com" aria-label="Email Yekaterina"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+12065554567" aria-label="Call Yekaterina"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-label="Site Footer">
+    <section class="subscribe-section" aria-labelledby="newsletter-heading">
+      <h3 id="newsletter-heading">Subscribe to Our Newsletter</h3>
+      <p>Get updates on new recipes and cafe news delivered straight to your inbox.</p>
+      <form class="subscribe-form">
+        <label for="email-subscription" class="visually-hidden">Email Address</label>
+        <input type="email" id="email-subscription" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="social-section" aria-labelledby="social-heading">
+      <h3 id="social-heading" class="visually-hidden">Follow Us</h3>
+      <div class="social-media">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    
+    <p class="copyright">&copy; 2025 Evyy Cafe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Evyy Cafe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/gallery.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="../images/evyycafelogo.png"
+        alt="Evyy Cafe Logo - A pastel pink cafe logo"
+      />
+
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="our_desserts.html">Our Desserts</a></li>
+          <li><a href="diy.html">DIY</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Dessert Gallery</h2>
+        <div class="gallery-grid">
+          <article class="gallery-item">
+            <img
+              src="../images/Devils-Food-Cake.jpg"
+              alt="Devil's Food Cake: Rich chocolate cake with chocolate frosting on a white plate"
+              loading="lazy"
+            />
+            <p>
+              <strong>Devil's Food Cake</strong> is a rich, moist chocolate cake
+              known for its deep cocoa flavor and fluffy texture.
+            </p>
+          </article>
+
+          <article class="gallery-item">
+            <img
+              src="../images/Tres-Leches-Cake.jpg"
+              alt="Tres Leches Cake: Sponge cake soaked in milk with whipped cream topping and strawberries"
+              loading="lazy"
+            />
+            <p>
+              <strong>Tres Leches</strong> is a classic Latin American dessert that
+              has become a beloved staple of Cuban cuisine.
+            </p>
+          </article>
+
+          <article class="gallery-item">
+            <img
+              src="../images/woodpile-crepe-cake.jpg"
+              alt="Woodpile Cake: Stacked layered crepe cake with cream filling and cherry topping"
+              loading="lazy"
+            />
+            <p>
+              <strong>Woodpile Cake or Crepe Cake</strong> is a traditional Moldovan
+              dessert made by layering thin crepes filled with sour cherries and
+              sweet cream.
+            </p>
+          </article>
+
+          <article class="gallery-item">
+            <img
+              src="../images/napoleon-cake.webp"
+              alt="Napoleon Cake: Layered puff pastry cake with custard filling and flaky top"
+              loading="lazy"
+            />
+            <p>
+              <strong>Napoleon Cake</strong> is a layered pastry dessert made with
+              crisp, flaky puff pastry and rich, creamy custard filling.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dessert-facts" aria-labelledby="calories-title">
+        <h2 id="calories-title">Calories Per Dessert</h2>
+        <div class="facts-grid">
+          <article class="fact">
+            <h3>Devil's Food Cake</h3>
+            <p>Approx. <strong>450 kcal</strong> per slice</p>
+          </article>
+          <article class="fact">
+            <h3>Tres Leches</h3>
+            <p>Approx. <strong>350 kcal</strong> per serving</p>
+          </article>
+          <article class="fact">
+            <h3>Crepe Cake</h3>
+            <p>Approx. <strong>370 kcal</strong> per piece</p>
+          </article>
+          <article class="fact">
+            <h3>Napoleon Cake</h3>
+            <p>Approx. <strong>420 kcal</strong> per slice</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Site Footer">
+      <p>&copy; 2025 Evyy Cafe. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
