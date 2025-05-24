@@ -1,0 +1,138 @@
+
+#intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffd166;
+}
+
+#gallary-container, #fun-fact-container{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  height: auto;
+  background-color: #0a7064;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+#gallary-container img {
+  width: 23%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#gallary-container img:hover {
+  transform: scale(1.1);
+}
+
+#intro-container p {
+  font-size: 1rem;
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+#intro-container p:first-letter {
+  font-size: 2em;
+}
+#bio-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+#bio-container ul {
+  list-style-type: none;
+  text-align: left;
+  width: 40%;
+}
+
+#bio-container li{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#bio-container img {
+  width: 50%;
+  object-fit: contain;
+  
+}
+
+#fun-fact-details  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  line-height: 200%;
+}
+#fun-fact-details p {
+  text-align: justify;
+  font-weight: bold;
+}
+
+#fun-fact-container img {
+  width: 20%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.capy-animations {
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.animation-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.capy-img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.capy-img:hover {
+  transform: scale(1.1);
+}
+
+/* footer {
+  background-color: rgb(169, 124, 124);
+  border: 2px solid white;
+  padding: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+} */
+
+/* make it responsive on smaller screen */
+@media screen and (max-width: 600px) {
+  #gallary-container,
+  #bio-container,
+  #fun-fact-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
