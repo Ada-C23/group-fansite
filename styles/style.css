@@ -14,7 +14,7 @@ h1 {
     font-family: "Chewy", system-ui;
 }
 
-.header-container {
+header {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
