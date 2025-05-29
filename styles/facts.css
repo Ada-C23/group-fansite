@@ -1,11 +1,10 @@
-body{
+body {
     margin: 15px;
     background: #ebebeb;
     font-family: 'Fira Code', 'Source Code Pro', 'Inconsolata', 'Ubuntu Mono', monospace;
     line-height: normal;
 }
-
-.nav_container{
+.nav_container {
     display: flex;
     margin: 20px;
     justify-content: space-between;
@@ -18,27 +17,22 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 h1 {
     color: #224461;
 }
-
 h2 {
     border: 2px #224461 solid;
     padding: 10px;
     margin: 5px;
 }
-
 nav li {
     list-style: none;
 }
-
 ol {
     color: #224461;
     list-style: decimal-leading-zero;
     margin: 20px;
 }
-
 .fact-li {
     margin: 5px;
     padding: 15px;
@@ -47,20 +41,17 @@ ol {
     border: 1px #224461 solid;
     overflow: scroll;
 }
-.fact-li h2{
+.fact-li h2 {
     color: #f9d143;
     font-weight: 300;
 }
-
-.fact-li p{
+.fact-li p {
     color: #224461;
     font-weight: 100;
 }
-
-#example-code{
+#example-code {
     color: #224461;
 }
-
 code {
     line-height: 50%;
 }
