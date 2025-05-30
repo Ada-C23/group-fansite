@@ -1,0 +1,97 @@
+/* General Reset */
+
+
+/* Container Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    gap: 4em;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #457270;
+    padding: 20px 20px 50px 20px;
+    border: solid 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    max-width: 50vw;
+    width: 100%;
+}
+
+section h2, h3 {
+    font-family: "Chewy", system-ui;
+    text-decoration: underline;
+    color: pink;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 2em;
+}
+
+section h4 {
+    text-decoration: underline;
+    color: #eb963c;
+}
+
+section#references {
+    font-size: 12px;
+    text-align: justify;
+}
+
+section#references a {
+    color: pink;
+}
+
+section#references a:hover {
+    color: #000000;
+}
+
+a {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #000000;
+}
+
+/* Flexbox for Images and Text */
+section .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+section img {
+    max-width: 75%;
+    height: auto;
+    border: solid 2px;
+    border-color: #a97c4b;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#page-title {
+    max-height: 75%;
+}
+
+section#page-title img {
+    max-height: 13em;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 360px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
