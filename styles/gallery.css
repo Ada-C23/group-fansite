@@ -1,0 +1,66 @@
+body {
+    color: #224461;
+    background-color: #ebebeb;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+nav {
+    padding: 10px;
+    margin: 10px;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+nav li a {
+    text-decoration: none;
+    color: #224461;
+    padding: 3px;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card { 
+    padding: 20px;
+    background-color: #f9d143;
+    text-align: center;
+    width: 350px;
+}
+.card img {
+    height: 260px;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease; 
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+.card figcaption {
+    color: #224461;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px;
+    margin-top: auto;
+}
+.card figcaption a {
+    text-decoration: none;
+    color: #224461;
+    padding: 5px;
+}
+.card figcaption a:hover {
+    text-decoration: underline;
+}
+footer {
+    padding: 10px;
+}
