@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: brown;
+  padding: 5px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  width: 75%;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+section p {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.pasta {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: gainsboro;
+  width: 275px;
+  margin: 1em;
+  justify-self: center;
+  box-shadow: 8px 5px 5px gainsboro;
+}
+
+.source {
+  font-size: 10px;
+}
